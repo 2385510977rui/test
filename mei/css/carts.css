@@ -1,0 +1,186 @@
+@charset "utf-8";
+img {
+	max-width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin: 0;
+}
+
+p {
+	margin: 0;
+	color: #333;
+}
+
+ul,
+ol,
+li {
+	list-style: none;
+}
+
+ul {
+	margin: 0;
+	padding: 0;
+}
+
+.red {
+	color: #fe3f71;
+}
+
+.fz1 {
+	font-size: 1.5rem;
+}
+
+.fz-1 {
+	font-size: 1rem;
+	color: #666;
+}
+
+
+/**/
+
+.carts ul li .am-g {
+	padding: 1rem 0;
+}
+
+.carts-tiao {
+	height: 0.5rem;
+	background-color: #f5f5f5;
+}
+
+.checked {
+	margin-top: 3rem;
+	width: 1.5rem;
+	height: 1.5rem;
+	border: 1px solid #d9d9d9;
+	border-radius: 1.5rem;
+	cursor: pointer;
+}
+
+.checked.active,
+.all-checked.active {
+	background: url(../images/xuan.png);
+	background-size: 100%;
+}
+
+.carts .carts-jian {
+	font-size: 1rem;
+	color: #666;
+	text-align: center;
+	letter-spacing: 0.5rem;
+	padding-right: 1rem;
+}
+
+
+/*加减号*/
+
+.spinner input {
+	width: 3rem;
+	height: 2rem;
+	border: none;
+	font-family: Arial;
+	color: #626462;
+	text-align: center;
+}
+
+.spinner .bord-1,
+.spinner .bord-2 {
+	border-radius: 2rem;
+	border: 1px solid #868686;
+	width: 2rem;
+	height: 2rem;
+	padding: 0;
+	color: #626462;
+	outline: none;
+	text-align: center;
+	background-color: #fff;
+	display: inline-block;
+}
+
+
+/*全选*/
+
+.all-checked {
+	cursor: pointer;
+	margin-top: 1rem;
+	width: 1.5rem;
+	height: 1.5rem;
+	border: 1px solid #d9d9d9;
+	border-radius: 1.5rem;
+}
+
+.quan {
+	border-bottom: 1px solid #d9d9d9;
+	position: fixed;
+	left: 0;
+	bottom: 6rem;
+}
+
+.quan-top {
+	margin-top: 0.6rem;
+}
+
+.btn2 .am-btn {
+	padding: 1.1rem 1.3rem;
+}
+
+.btn1 .am-btn {
+	padding: 1.1rem 2rem;
+}
+
+
+/*底部导航*/
+
+.fix p {
+	font-size: 1.5rem;
+	color: #a9a2ab;
+	margin-bottom: 0;
+	margin-top: 0.2rem;
+}
+
+.fix-bg {
+	background-color: #fff;
+	padding: 0.5rem 0;
+}
+
+.fix-bg a:hover p {
+	color: #4d4d4d;
+}
+
+.fix {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+}
+
+.pink {
+	color: #e5004f!important;
+}
+
+
+/*替换*/
+
+.spinner {
+	display: none;
+}
+
+.cart1 {
+	display: none;
+}
+
+.edit1 {
+	display: none;
+}
+
+.cart-all1 {
+	display: none;
+}
+
+.btn1 {
+	display: none;
+}

@@ -1,0 +1,196 @@
+@charset "utf-8";
+img {
+	max-width: 100%;
+}
+
+p {
+	margin: 0;
+	color: #333;
+}
+
+ul,
+ol,
+li {
+	list-style: none;
+}
+
+ul {
+	margin: 0;
+	padding: 0;
+}
+.geli {
+	height: 100px;
+}
+
+/*顶部*/
+
+.search-box {
+	display: block;
+	border: 1px solid #d7d7d7;
+	border-radius: 15px;
+	line-height: 2.5rem;
+	font-size: 1.2rem;
+}
+
+.search-box .field {
+	margin-left: 3%;
+	width: 78%;
+	padding-left: 10px;
+	border: none;
+	background: none;
+	color: #999;
+	outline: none;
+}
+
+
+/*轮播图*/
+
+.am-slider-default .am-control-nav li {
+	margin: 23px 4px;
+}
+
+
+/*精品推荐*/
+
+.m-sale-box {
+	border-top: 1px solid #efefef;
+	padding-top: 0px;
+}
+
+.m-sale-tit h2 .prd-reco {
+	background-position: 0 -30px;
+}
+
+.m-sale-tit h2 {
+	margin: 0;
+	padding-top: 1.5rem;
+	position: relative;
+	font: 2rem "黑体";
+	color: #333;
+}
+
+.m-sale-tit h2 .tit-logo {
+	position: absolute;
+	margin-left: -35px;
+	width: 30px;
+	height: 30px;
+	background: url(../images/tit_logo.png) no-repeat;
+	background-size: 100%;
+}
+
+.m-sale-tit h2 span {
+	padding-top: 0.5rem;
+	display: inline-block;
+}
+
+.m-sale-tit p span {
+	display: inline-block;
+	padding: 0 0.5rem;
+	letter-spacing: 0.5rem;
+	color: #999;
+}
+/*今日闪购*/
+
+.shangou-p {
+	color: #43423f;
+	font-size: 1rem;
+}
+
+.p:hover {
+	color: #9f9f9f;
+}
+
+.yuan {
+	color: #b24656;
+}
+
+.xian {
+	height: 0.5rem;
+	background-color: #f8f8f8;
+}
+
+.yuan span {
+	color: #b2b1ad;
+	text-decoration: line-through;
+}
+
+/*ul*/
+
+.prd-into-box {
+	position: relative;
+	width: 100%;
+	padding-bottom: 5px;
+	background: #fff;
+}
+
+.prd-into-box a {
+	text-decoration: none;
+	color: #666;
+}
+
+.prd-into-box .prd-cont {
+	position: absolute;
+	height: 100%;
+	width: 47%;
+	top: 15%;
+	right: 5%;
+	
+}
+
+.prd-into-box .prd-cont h3 {
+	font: 1.5rem "Hiragino Sans GB","Microsoft YaHei","WenQuanYi Micro Hei",sans-serif;
+	margin-bottom: 5px;
+	height: 40px;
+    overflow: hidden;
+}
+
+.prd-into-box .prd-cont p {
+	font: 1rem "Hiragino Sans GB","Microsoft YaHei","WenQuanYi Micro Hei",sans-serif;
+	height: 50px;
+	overflow: hidden;
+	text-align: left;
+	color: #333;
+}
+
+.prd-into-box .prd-cont .prd-price .prd-price-sale {
+	color: #999;
+	text-decoration: line-through;
+}
+.prd-into-box .prd-cont .prd-price span.prd-price-hd {
+    font-size: 16px;
+    color: #ec3461;
+}
+.prd-into-box .prd-cont .prd-into-buy {
+    display: inline-block;
+    width: 50%;
+    border: none;
+    background: none;
+    border: 1px solid #333;
+    color: #333;
+    text-align: center;
+}
+
+/*底部导航*/
+.fix p{
+	font-size: 1.5rem;
+	color: #a9a2ab;
+	margin-bottom: 0;
+	margin-top: 0.2rem;
+}
+
+.fix-bg{
+	background-color: #fff;
+	padding: 0.5rem 0;
+}
+.fix-bg a:hover p{
+	color: #4d4d4d;
+}
+.fix{
+	position: fixed;
+	bottom: 0;
+	left: 0;
+}
+.pink{
+	color: #e5004f!important;
+}
+

@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html class="no-js">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="description" content="">
+		<meta name="keywords" content="">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>选择地址</title>
+		<!-- Set render engine for 360 browser -->
+		<meta name="renderer" content="webkit">
+
+		<!-- No Baidu Siteapp-->
+		<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+		<!-- Add to homescreen for Chrome on Android -->
+		<meta name="mobile-web-app-capable" content="yes">
+
+		<!-- Add to homescreen for Safari on iOS -->
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<meta name="apple-mobile-web-app-title" content="Amaze UI" />
+		
+		<link rel="stylesheet" type="text/css" href="css/amazeui.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/chongzhi.css" />
+		<link rel="stylesheet" type="text/css" href="css/address.css" />
+	</head>
+
+	<body>
+		<div class="address">
+			<div class="header">
+				<div class="am-g">
+					<div class="am-u-sm-2">
+						<a href="Settlement.html"><img src="images/zuo.png" /></a>
+					</div>
+					<div class=" am-u-sm-8 head-title">
+						
+						<span>选择地址</span>
+						<span>编辑收货地址</span>
+
+					</div>
+					<div class=" am-u-sm-2" id="delete">
+						删除
+					</div>
+				</div>
+			</div>
+			<!--收货地址列表-->
+			<div class="page-content">
+				<div class="select-address-ls">
+					<ul>
+						<li>
+							<div class="li-inner am-cf">
+								<div class="ad-info am-fl">
+									<div class="info-ref am-cf">
+										<div>小明</div>
+										<em>00000000000</em>
+										<span>默认</span>
+									</div>
+									<div class="info-des">
+										北京市市辖区东城区三段二号
+									</div>
+								</div>
+								<div class="ad-line am-fl"></div>
+								<div class="am-fl ad-edit-btn">
+									<span class="am-icon-pencil-square-o">编辑</span>
+								</div>
+							</div>
+							<div class="line-color"></div>
+						</li>
+					</ul>
+				</div>
+
+			</div>
+			<!--修改信息-->
+			<div class="xiugai">
+				<form action="" method="post" id="form">
+					<div class="revise am-cf">
+
+						<div class="name am-fl">
+							<lable>收件人：</lable>
+							<input type="text" name="name" id="name" value="" />
+						</div>
+						<div class="del-icon am-fr">
+							x
+						</div>
+
+					</div>
+					<div class="revise am-cf">
+
+						<div class="phone am-fl">
+							<lable>联系方式：</lable>
+							<input type="text" name="phone" id="phone" value="" />
+						</div>
+						<div class="del-icon am-fr">
+							x
+						</div>
+
+					</div>
+					<div class="revise am-cf ">
+
+						<div class="didian am-fl am-cf">
+							<lable>省/直辖市：</lable>
+							<select name="province" id="province">
+								<option value="0">请选择</option>
+								<option value="北京市">北京市</option>
+								<option value="山东省">山东省</option>
+								<option value="湖南省">湖南省</option>
+								<option value="四川省">四川省</option>
+								<option value="广东省">广东省</option>
+							</select>
+						</div>
+						<div class="del-icon am-fr">
+							>
+						</div>
+
+					</div>
+					<div class="revise am-cf">
+
+						<div class="didian am-fl am-cf">
+							<lable>所在城市：</lable>
+							<select name="city" id="city">
+								<option value="0">请选择</option>
+								<option value="某某市">某某市</option>
+								<option value="某某市">某某市</option>
+								<option value="某某市">北京市</option>
+								<option value="某某市">北京市</option>
+								<option value="某某市">北京市</option>
+							</select>
+						</div>
+						<div class="del-icon am-fr">
+							>
+						</div>
+
+					</div>
+					<div class="revise am-cf">
+
+						<div class="didian am-fl am-cf">
+							<lable>所在县区：</lable>
+							<select name="area" id="area">
+								<option value="0">请选择</option>
+								<option value="某某区">某某区</option>
+								<option value="某某区">北京市</option>
+								<option value="某某区">北京市</option>
+								<option value="某某区">北京市</option>
+							</select>
+						</div>
+						<div class="del-icon am-fr">
+							>
+						</div>
+
+					</div>
+					<div class="revise am-cf">
+
+						<div class="phone am-fl">
+							<lable>详细地址：</lable>
+							<input type="text" name="dizhi" id="dizhi" value="" />
+						</div>
+						<div class="del-icon am-fr">
+							x
+						</div>
+
+					</div>
+				</form>
+
+				<div class="moren am-cf">
+					<span class="sure-icon am-fl"></span>
+					<div class="am-fl">默认地址</div>
+				</div>
+
+			</div>
+
+			<!--footer-->
+			<div class="page-btn-wrap">
+				<span class="add_btn">添加收货地址</span>
+				<span class="baocun_btn">保存收货地址</span>
+			</div>
+		</div>
+	</body>
+	<script src="js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			//添加新地址
+			$('.add_btn').click(function() {
+					$('.page-content').hide();
+					$('.xiugai').show();
+					$('.head-title span').eq(0).hide();
+					$('.head-title span').eq(1).show();
+					$('.page-btn-wrap span').eq(0).css('display', 'none');
+					$('.page-btn-wrap span').eq(1).css('display', 'block');
+
+				})
+				//保存收货地址
+			$('.baocun_btn').click(function() {
+				//				var name=$('#name').val()
+				//				var phone 
+				var objAd = {};
+				//								console.log($objAd);
+				var params = $('#form').serialize(); //.serialize()自动调用了encodeURIComponent方法将数据编码了
+				params = decodeURIComponent(params, true); //调用decodeURIComponent(XXX,true);将数据解码
+				//				console.log(params);
+				var arr = params.split('&');
+
+				//				console.log($arr);
+				$.each(arr, function(i) {
+					//                   console.log(arr[i]);
+					var str = arr[i].split('=');
+					//					console.log(str);
+					objAd[str[0]] = str[1];
+
+				});
+				console.log(objAd);
+				//				console.log(objAd.province + objAd.city );
+				//
+				$('.select-address-ls ul').append('<li><div class="li-inner am-cf"><div class="ad-info am-fl"><div class="info-ref am-cf"><div>' + objAd.name + '</div><em>' + objAd.phone + '</em></div><div class="info-des">' + objAd.province + objAd.city + objAd.area + '</div></div><div class="ad-line am-fl"></div><div class="am-fl ad-edit-btn"><span class="am-icon-pencil-square-o">编辑</span></div></div><div class="line-color"></div></li>');
+				console.log($('.select-address-ls ul li'));
+				$('.page-content').show();
+				$('.xiugai').hide();
+				$('.head-title span').eq(0).show();
+				$('.head-title span').eq(1).hide();
+				$('.page-btn-wrap span').eq(0).css('display', 'block');
+				$('.page-btn-wrap span').eq(1).css('display', 'none');
+			});
+			//点击删除
+
+			$('.select-address-ls').click(function(e) {
+				var bianji = e.target.innerText == '编辑';
+				if(bianji) {
+					$('.page-content').hide();
+					$('.xiugai').show();
+					$('#delete').show();
+					$('.page-btn-wrap span').eq(0).css('display', 'none');
+					$('.page-btn-wrap span').eq(1).css('display', 'block');
+					$('#name').val($(e.target).parents('.ad-edit-btn').siblings('.ad-info').find('.info-ref>div').html());
+					$('#phone').val($(e.target).parents('.ad-edit-btn').siblings('.ad-info').find('.info-ref>em').html())
+
+				}
+
+			});
+			//删除
+			$('#delete').click(function() {
+				var delName = $('#name').val();
+				$('.select-address-ls ul li').each(function(i) {
+					if($(this).find('.info-ref>div').html() == delName) {
+						$(this).remove();
+					}
+				});
+				$('.page-content').show();
+				$('.xiugai').hide();
+				$('#delete').hide();
+				$('.page-btn-wrap span').eq(0).css('display', 'block');
+				$('.page-btn-wrap span').eq(1).css('display', 'none');
+
+			})
+
+		})
+	</script>
+
+</html>

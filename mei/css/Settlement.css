@@ -1,0 +1,79 @@
+@charset "utf-8";
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin: 0;
+}
+
+p {
+	margin: 0;
+}
+
+img {
+	max-width: 100%;
+}
+
+.border-bootom {
+	border-bottom: 1px solid #f8f8f8;
+}
+
+.tiao {
+	height: 0.5rem;
+	background-color: #f5f5f5;
+}
+
+.pink {
+	color: #e5004f!important;
+}
+
+
+/**/
+
+.fz1 {
+	font-size: 1rem;
+}
+
+.fz-1 {
+	font-size: 1.5rem;
+}
+
+.dizhi {
+	overflow: hidden;
+	height: 1.8rem;
+}
+
+.checked {
+	margin-top: 1.1rem;
+	margin-right: 1rem;
+	width: 1.5rem;
+	height: 1.5rem;
+	border: 1px solid #d9d9d9;
+	border-radius: 1.5rem;
+	cursor: pointer;
+}
+
+.checked.active {
+	background: url(../images/xuan.png);
+	background-size: 100%;
+}
+
+.juan {
+	padding: 1rem 1.2rem;
+	border-bottom: 1px solid #f8f8f8;
+}
+
+.juan .am-btn {
+	padding: 0.3em 1em;
+	outline: none;
+}
+
+.juan .checked {
+	margin-top: 0.4rem;
+}
+
+.submit .am-btn {
+	padding: 1.1em 1em;
+}

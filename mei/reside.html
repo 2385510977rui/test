@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link rel="stylesheet" type="text/css" href="css/amazeui.min.css" />
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/reside.css" />
+	</head>
+
+	<body>
+		<div class="gouwu">
+			<div class="am-container am-padding-vertical-xs">
+				<div class="am-g">
+					<div class="am-u-sm-3 am-text-center"><a href="login.html"><i class="am-icon-angle-left"></i></a></div>
+					<div class="am-u-sm-6 am-text-center">注册</div>
+					<div class="am-u-sm-3 am-text-center">&nbsp;</div>
+				</div>
+			</div>
+		</div>
+		<form id="from-box" data-am-validator>
+			<div class="shuqu am-container am-padding-vertical-sm">
+				<p><input type="text" class="am-form-field am-radius im js-pattern-sk" placeholder="用户名/手机号" /></p>
+				<p class="aqq">
+					<input type="password" class="am-form-field am-radius im" placeholder="密码" minlength="6" />
+					<!--<div class="paa">
+						<i class="am-icon-toggle-on"></i>
+					</div>-->
+				</p>
+				<p><input type="text"  class="am-form-field am-radius im js-pattern-emai" placeholder="请输入电子邮箱" /></p>
+			</div>
+			<div class="am-container  am-padding-vertical-sm">
+				<div class="jizhu am-vertical-align">
+					<div class="am-vertical-align-middle pass am-icon-square-o">
+						<!--<i class="am-icon-check-square"></i>-->
+					</div>
+
+					<span class="ziti am-vertical-align-middle">我已看过并接受<a href="#">《用户协议》</a></span>
+				</div>
+			</div>
+			<div class="am-container am-padding-vertical-xs">
+				<a href="login.html"><button class="am-btn wid">注册</button></a>
+			</div>
+		</form>
+
+	</body>
+	<script src="js/jquery-1.12.4.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/amazeui.min.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		(function($) {
+			if($.AMUI && $.AMUI.validator) {
+				// 增加多个正则
+				$.AMUI.validator.patterns = $.extend($.AMUI.validator.patterns, {
+					sk: /^0?(13[0-9]|15[012356789]|18[0-9]|17[0-9])[0-9]{8}$/,
+					emai:/^(\w)+(\.\w+)*@(\w)+((\.\w{2,3}){1,3})$/,
+				});
+			}
+		})(window.jQuery);
+		$(document).ready(function () {
+			$(".pass").click(function () {
+				$(this).toggleClass('am-icon-check-square');
+			})
+		})
+	</script>
+
+</html>

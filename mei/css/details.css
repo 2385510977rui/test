@@ -1,0 +1,258 @@
+@charset "utf-8";
+i {
+	color: #a9a2ab;
+}
+
+img {
+	max-width: 100%;
+}
+
+p {
+	font-size: 1rem;
+	color: #a9a2ab;
+	margin-bottom: 0;
+	margin-top: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin: 0;
+}
+
+a{
+	color: #626262;
+}
+a:hover{
+	color: #fff;
+}
+
+
+.fz1 {
+	font-size: 1rem;
+}
+
+.fz-1 {
+	font-size: 1.5rem;
+}
+
+/*header*/
+
+.summary {
+	padding: 1.5rem 0 1.5rem 1rem;
+	border-bottom: 1px solid #e8e8e8;
+}
+
+.summary .zara-yuan span {
+	text-decoration: line-through;
+	font-size: 1rem;
+	color: #bbbbbb;
+}
+
+.zeng,
+.post {
+	padding: 1.5rem 0 1.5rem 1rem;
+	font-size: 1.3rem;
+}
+
+.zeng .zeng1,
+.post .zeng1 {
+	color: #faf6f6;
+	padding: 0.6rem 0.8rem;
+	margin-right: 1.5rem;
+	background-color: #be2924;
+}
+
+.post {
+	border-bottom: 1px solid #e8e8e8;
+}
+
+.border-bottom {
+	border-bottom: 1px solid #dedede;
+}
+
+.am-tabs-bd {
+	border: 0;
+}
+
+.am-nav-tabs {
+	border: 0;
+}
+
+.am-nav-tabs>li>a {
+	border: 0;
+}
+
+.am-nav-tabs>li.am-active>a,
+.am-nav-tabs>li.am-active>a:focus,
+.am-nav-tabs>li.am-active>a:hover {
+	border: 0;
+}
+
+.am-thumbnail {
+	border: 0;
+}
+
+.am-thumbnails>li {
+	padding: 0px .5rem 0.7rem .5rem;
+}
+
+.goodl {
+	padding-bottom: 1rem;
+}
+
+.am-active .goodl {
+	border-bottom: 2px solid #000000;
+}
+
+.am-tabs-nav li a {
+	color: #888888;
+	font-size: 1.4rem;
+	padding-bottom: 0.4rem;
+}
+
+.relative {
+	position: relative;
+}
+
+.yi-zuo {
+	position: absolute;
+	top: 0.5rem;
+	left: 9rem;
+}
+
+.yi-you {
+	position: absolute;
+	top: 0.5rem;
+	right: 9rem;
+}
+
+.show1 {
+	font-size: 1.5rem;
+	color: #343434;
+}
+
+.ziliao {
+	margin-top: 8rem;
+}
+
+.zc {
+	font-size: 1.4rem;
+	color: #363636;
+}
+
+.zi {
+	position: absolute;
+	bottom: 0;
+	left: 2rem;
+}
+
+.hei {
+	color: #171717;
+	font-size: 1.5rem;
+}
+
+.xian {
+	height: 0.5rem;
+	background-color: #f8f8f8;
+}
+
+.for span {
+	font-size: 1.3rem;
+	color: #a9a2ab;
+}
+
+/*详情*/
+.margin-bottom{
+	margin-bottom: 5rem;
+}
+
+/*底部*/
+
+.fix-bg {
+	background-color: #fff;
+}
+
+.fix {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	z-index: 100;
+}
+
+.fix p {
+	font-size: 1.2rem;
+	margin-top: 0.2rem;
+}
+
+.black {
+	color: #4d4d4d;
+}
+
+.dai {
+	background-color: #9ca19d;
+	color: #fff;
+	padding-top: 0.5rem;
+	padding-bottom: 0.5rem;
+}
+
+.mai {
+	background-color: #b44556;
+	color: #fff;
+	padding-top: 0.5rem;
+	padding-bottom: 0.5rem;
+}
+
+.am-btn-danger {
+	/*background-color: #b44556;
+	border-color:#b44556;*/
+}
+
+
+/*选项卡*/
+
+.am-tabs-d2 .am-tabs-nav {
+	background-color: #fff;
+}
+
+.am-tabs-d2 .am-tabs-nav>.am-active a {
+	line-height: 40px;
+	color: #545056;
+}
+
+.am-tabs-d2 .am-tabs-nav>.am-active {
+	position: relative;
+	background-color: #fff;
+	border-bottom: 2px solid #332f2e;
+}
+
+.am-tabs-d2 .am-tabs-nav>.am-active:after {
+	border: none;
+}
+
+.am-tabs-bd {
+	border: none;
+}
+
+.am-tabs-nav {
+	border-bottom: 1px solid #c9cbc9;
+}
+
+.am-tabs-nav li a {
+	font-size: 1.5rem;
+}
+
+.am-tabs-bd .am-tab-panel {
+	padding: 0;
+}
+
+/**/
+.liji-btn .am-btn{
+	padding: 0.6em 5em;
+}
+.am-btn.am-radius {
+    border-radius: 6px;
+}

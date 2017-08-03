@@ -1,0 +1,96 @@
+@charset "utf-8";
+.relative {
+	position: relative;
+}
+
+.my-banner {
+	background: url(../img/my-1.jpg) no-repeat center;
+	background-size: 100%;
+	height: 156.5px;
+}
+
+.my-gexing {
+	position: absolute;
+	top: 2.5rem;
+	left: 9rem;
+	color: #FFFFFF;
+}
+
+.my-fensi {
+	padding-top: 9rem;
+	font-size: 1.4rem;
+	color: #FFFFFF;
+}
+
+.my-xian {
+	height: 1rem;
+	background-color: #F5F5F5;
+}
+
+.my-dingdan {
+	padding-top: 0.5rem;
+	border-bottom: 1px solid #F5F5F5;
+	padding-bottom: 0.5rem;
+}
+
+.my-daifahuo {
+	padding-top: 1rem;
+	font-size: 1.2rem;
+	padding-bottom: 1rem;
+}
+
+.my-daifahuo div {
+	padding-top: 0.4rem;
+}
+
+.my-xiaoxi {
+	padding: 0.5rem 0;
+	border-bottom: 1px solid #F5F5F5;
+}
+
+.my-zan {
+	font-size: 1.2rem;
+	padding-top: 1rem;
+	padding-bottom: 1rem;
+}
+
+.my-zan div {
+	padding-top: 0.5rem;
+}
+
+.my-xinyuandan {
+	font-size: 1.2rem;
+	padding-top: 1rem;
+	padding-bottom: 1rem;
+}
+
+.my-xinyuandan div {
+	padding-top: 0.5rem;
+}
+.my-banner-1{
+	padding-bottom: 5rem;
+}
+/*底部导航*/
+.fix p{
+	font-size: 1.5rem;
+	color: #a9a2ab;
+	margin-bottom: 0;
+	margin-top: 0.2rem;
+}
+
+.fix-bg{
+	background-color: #fff;
+	padding: 0.5rem 0;
+	
+}
+.fix-bg a:hover p{
+	color: #4d4d4d;
+}
+.fix{
+	position: fixed;
+	bottom: 0;
+	left: 0;
+}
+.pink{
+	color: #e5004f!important;
+}

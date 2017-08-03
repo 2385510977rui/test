@@ -1,0 +1,100 @@
+@charset "utf-8";
+img {
+	max-width: 100%;
+}
+
+p {
+	margin: 0;
+	color: #333;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin: 0;
+}
+
+
+ul,
+ol,
+li {
+	list-style: none;
+}
+
+ul {
+	margin: 0;
+	padding: 0;
+}
+
+.tiao{
+	margin: 1rem 0;
+	height: 0.5rem;
+	background-color: #f5f5f5;
+}
+/*顶部*/
+
+.search-box {
+	display: block;
+	border: 1px solid #d7d7d7;
+	border-radius: 15px;
+	line-height: 2.5rem;
+	font-size: 1.2rem;
+}
+
+.search-box .field {
+	margin-left: 3%;
+	width: 78%;
+	padding-left: 10px;
+	border: none;
+	background: none;
+	color: #999;
+	outline: none;
+}
+.border-bootom{
+	border-bottom: 1px solid #ccc;
+}
+/*系列*/
+
+.series ul{
+	border-top: 1px solid #ccc;
+	overflow: hidden;
+	width: 103%;
+	display: inline-block;
+}
+.series ul li {
+	border-bottom: 1px solid #ccc;
+	border-right: 1px solid #ccc;
+}
+/*推荐品牌*/
+.suggest{
+	margin-bottom: 8rem;
+}
+.suggest-title{
+	margin: 1rem 0;
+}
+/*底部导航*/
+.fix p{
+	font-size: 1.5rem;
+	color: #a9a2ab;
+	margin-bottom: 0;
+	margin-top: 0.2rem;
+}
+
+.fix-bg{
+	background-color: #fff;
+	padding: 0.5rem 0;
+	
+}
+.fix-bg a:hover p{
+	color: #4d4d4d;
+}
+.fix{
+	position: fixed;
+	bottom: 0;
+	left: 0;
+}
+.pink{
+	color: #e5004f!important;
+}

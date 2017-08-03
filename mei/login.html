@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link rel="stylesheet" type="text/css" href="css/amazeui.min.css" />
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/login.css" />
+	</head>
+
+	<body>
+		<!--头部-->
+		<div class="gouwu">
+			<div class="am-container am-padding-vertical-xs">
+				<div class="am-g">
+					<div class="am-u-sm-3 am-text-center">&nbsp;</div>
+					<div class="am-u-sm-6 am-text-center">登录</div>
+					<a href="reside.html" class="am-u-sm-3 am-text-center bai">注册</a>
+				</div>
+			</div>
+		</div>
+		<form id="from-box" action="" method="get" data-am-validator>
+			<fieldset>
+				<div class="shuqu am-container am-padding-vertical-sm">
+					<p><input type="text" class="am-form-field am-radius im js-pattern-sk" placeholder="用户名/手机号" required/></p>
+					<p class="aqq">
+						<input type="password" class="am-form-field am-radius im" placeholder="密码" minlength="6" required />
+						<div class="paa">
+							<!--<i class="am-icon-toggle-on"></i>-->
+						</div>
+					</p>
+				</div>
+			</fieldset>
+		</form>
+		<div class="am-container  am-padding-vertical-sm">
+			<div class="jizhu am-vertical-align">
+				<div class="kou am-vertical-align-middle"></div>
+
+				<span class="ziti am-vertical-align-middle">记住本次登录</span>
+			</div>
+		</div>
+		<!--登录-->
+		<div class="am-container am-padding-vertical-xs">
+			<a href="my.html"><button class="am-btn wid">立即登录</button></a>
+		</div>
+		<div class="am-cf am-container">
+			<!--<div class="am-fl">
+
+			</div>-->
+			<div class="am-fr">
+				<span class="ziti">忘记密码</span>
+				<!--<a href="reside.html"><span class="ziti">免费注册</span></a>-->
+			</div>
+		</div>
+		<!--合作伙伴-->
+		<div class="am-g am-container am-padding-vertical-lg am-vertical-align">
+			<div class="am-u-sm-3 cols am-vertical-align-middle"></div>
+			<div class="am-u-sm-6 am-text-center shi am-vertical-align-middle">使用合作账号登录</div>
+			<div class="am-u-sm-3 cols am-vertical-align-middle"></div>
+		</div>
+		<!--qq-->
+		<div class="qq am-text-center">
+			<i class="am-icon-btn am-primary am-icon-qq mari"></i>
+			<i class="am-icon-btn am-danger am-icon-weibo"></i>
+		</div>
+	</body>
+	<script src="js/jquery-1.12.4.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/amazeui.min.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		(function($) {
+			if($.AMUI && $.AMUI.validator) {
+				// 增加多个正则
+				$.AMUI.validator.patterns = $.extend($.AMUI.validator.patterns, {
+					sk: /^0?(13[0-9]|15[012356789]|18[0-9]|17[0-9])[0-9]{8}$/,
+
+				});
+				// 增加单个正则
+				$.AMUI.validator.patterns.yourpattern = /^your$/;
+			}
+		})(window.jQuery);
+	</script>
+
+</html>
