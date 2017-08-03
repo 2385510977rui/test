@@ -1,0 +1,307 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.hide {
+  display: none; /* !important; */
+}
+.pull-left {
+  float: left;
+}
+.pull-right {
+  float: right;
+}
+.center {
+  margin: 0 auto;
+  display: block;
+}
+.orange_emphasis {
+color: #F80!important;
+}
+.deep_blue_emphasis {
+  color: #4889B3!important;
+}
+.green_emphasis {
+  color: #48B36F!important;
+}
+.green-color {
+  color: #48B36F !important;
+}
+.red-color {
+  color: #F80!important;
+}
+.orange-color {
+  color: #4889B3 !important;
+}
+.blue-color{
+    color: #65b1fd !important;
+}
+body {
+  font-size: 12px;
+  font-family: "宋体";
+  color: #333333;
+  margin: 0;
+  background-color: #F7F7F7;
+}
+a {
+  text-decoration: none;
+  color: #333333;
+}
+img {
+  border: none;
+}
+.container {
+  width: 960px;
+  margin: 0 auto 10px;
+}
+.row {
+  text-align: left;
+  /* IE < 8 */
+
+}
+.row:before,
+.row:after {
+  content: ".";
+  display: block;
+  height: 0;
+  visibility: hidden;
+}
+.row:after {
+  clear: both;
+}
+.row {
+  zoom: 1;
+}
+.lvyehead_top .divider{
+  width:1px;
+  float:none;
+  padding:0px;
+  /* margin: 0 5px; */
+  color: #CCC;
+  display: inline;
+  font-style: normal;
+}
+.header-logo {
+  padding-top: 10px;
+  width: 100px;
+  text-align: center;
+}
+.header-menu {
+  height: 70px;
+}
+.header-menu-list {
+  color: black;
+  list-style-type: none;
+  display: block;
+  margin-top: 24px;
+  _width: 580px;
+}
+.header-menu-list li{
+  float: left;
+  margin-left: 16px;
+  width: 54px;
+  _overflow: hidden;
+}
+.header-menu-list a{
+  display: block;
+  font-family: "Microsoft YaHei";
+  color: black;
+}
+.header-menu-list a:hover {
+  text-decoration: none;
+  color: white;
+}
+.header-menu-list .title {
+  padding: 0;
+  font-size: 18px;
+  text-align: center;
+  width: 61px;
+  height: 30px;
+  line-height: 30px;
+  cursor: pointer;
+}
+.header-menu-list .title:hover {
+  background: transparent url("../images_20130101/menu_title_bg_hover.png") no-repeat;
+}
+.header-menu-content {
+  background-color: white;
+  border: 1px solid gray;
+}
+.header-menu-content li {
+  text-align: left;
+  list-style-type: none;
+  padding: 5px 10px;
+  border-bottom: 1px dotted #CCC;
+}
+.header-menu-content li:last-child {
+  border-bottom: none;
+}
+.header-menu-content a {
+  color: #333333;
+  margin-right: 3px;
+}
+.header-menu-content a:hover {
+}
+#mNavZiXun_menu{
+  width: 72px;
+  _width: 85px;
+}
+#mNavLunTan_menu{
+  width: 290px;
+}
+#mNavLunTan_menu a{
+  padding: 4px;
+}
+#mNavLunTan_menu ul li{
+    padding: 10px;
+}
+#mNavHuoDong_menu{
+  width: 72px;
+  _width: 80px;
+}
+#mNavXianLu_menu{
+  width: 72px;
+  _width: 80px;
+}
+#mNavShouJi_menu{
+  width: 80px;
+}
+#mNavBaoXian_menu{
+  width: 72px;
+  _width: 80px;
+}
+.header-menu-search {
+  width: 260px;
+  height: 28px;
+  padding-top: 24px;
+}
+.header-menu-search .keyword {
+  border: none;
+  background-image: url(http://www.lvye.cn/images/hd2.png);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  color: #666;
+  padding-left: 10px;
+  float: left;
+  width: 147px;
+  height: 28px;
+  line-height: 28px;
+}
+.header-menu-search .search-type {
+  width: 52px;
+  height: 28px;
+  display: block;
+  border: 0 none;
+  background-repeat: no-repeat;
+  background-position: 0 -33px;
+  color: #666;
+  line-height: 28px;
+  background-image: url(http://www.lvye.cn/images/hd2.png);
+  cursor: pointer;
+}
+.header-menu-search .search-type .title {
+  padding: 0 0 0 8px;
+  height: 28px;
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 28px;
+  font-family: "宋体";
+}
+.header-menu-search .search-type ul {
+  list-style-type: none;
+  background-color: white;
+  text-align: center;
+  width: 52px;
+  position: absolute;
+}
+.header-menu-search .search-type li {
+  border-bottom: 1px dotted gray;
+}
+.header-menu-search .search-type li:last-child {
+  border-bottom: none;
+}
+.header-menu-search .search-btn {
+  cursor: pointer;
+}
+.header-submenu table {
+  width: 870px;
+  margin: 0 auto;
+  /* table-layout: fixed; */
+  text-align: center;
+  font-family: "宋体", "Microsoft YaHei";
+}
+.header-submenu a:hover {
+}
+.arrow-down {
+  background: transparent url("../images_20130101/arrow_down.gif") no-repeat 2px 11px;
+  *background-position: 2px 8px;
+  width: 10px;
+}
+.edt .cl{
+    clear: none !important;
+}
+.links li{
+    display: inline-block;
+    _display: inline;
+    word-wrap: normal;
+    word-break: keep-all;
+    white-space:nowrap;
+    line-height:15px;
+}
+.clearfix:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+}
+.clearfix{*zoom:1;}
+#nav_huodong {
+  background: url(../images_20130101/quicknav1_bg.jpg) no-repeat 0 0;
+}
+#nav_information {
+  background: url(../images_20130101/quicknav2_bg.jpg) no-repeat 0 0;
+}
+#nav_frameZT8q88 {
+  background: url(../images_20130101/quicknav3_bg.jpg) no-repeat 0 0;
+}
+#nav_beauty {
+  background: url(../images_20130101/quicknav4_bg.jpg) no-repeat 0 0;
+}
+#backtop {
+  padding: 0!important;
+  background-color: #48B36F;
+  width: 50px!important;
+}
+#backtop:hover {
+  background-color: #42A566;
+}
+.skiplaceul {
+  overflow: hidden;
+  padding: 10px 0 0;
+  line-height: 25px;
+  background: url(../images_20130101/ski_bg.jpg) no-repeat right bottom;
+  height: 160px;
+  margin-left: 15px;
+}
+.skiplaceul li {
+  width: 90px;
+  float: left;
+}
+.skiplaceul li a {
+  color: #2C7FB8;
+}
+.pin-pai-list {
+  padding-left: 10px;
+}
+.gray_prefix {
+  color: #AAA;
+}
+.orange_prefix {
+  color: #F80!important;
+}
+
+.red-color:hover {
+  color: #48B36F!important;
+}

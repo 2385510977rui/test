@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Jxdx用户中心</title>
+		<link rel="stylesheet" type="text/css" href="css/register.css"/>
+		<script src="js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<div class="logo"><em></em></div>
+		<div class="content">
+			<div class="box1">
+				<p>
+					<span>注册Jxdx账号</span>
+					<b>绿野帐号能使用绿野网、绿野活动、绿野自游等其他服务。如果您已拥有绿野账号，则可<a href="land.html">在此登录</a></b>
+				</p>
+			</div>
+			<div class="box2">
+				<a href="javascript:void(0)" id="youxiang"><em></em>用电子邮箱注册</a>
+				<a href="javascript:void(0)" id="shouji"><em></em>用手机号注册</a>
+			</div>
+			<div class="box3">
+				<ol class="o1">
+					<li>
+						<i><span>用户名：</span></i>
+						<input type="text" name="user" id="yonghu1" value="" class="ipt"/>
+						<b>长度为3~25个字符，不能以“_”开头或结尾</b>
+						<p class="p_1">请输入用户名</p>
+						<p class="p2"></p>
+						<p class="p3">该用户名包含非法字符</p>
+					</li>
+					<li>
+						<i><span>邮箱：</span></i>
+						<input type="text" name="Email" id="yx" value="" class="ipt"/>
+						<b>例如:sample@163.com</b>
+						<p class="p_1">请输入邮箱</p>
+						<p class="p2"></p>
+						<p class="p3">邮箱地址错误</p>
+					</li>
+					<li>
+						<i><span>密码：</span></i>
+						<input type="password" name="pwd" id="mima1" value="" class="ipt"/>
+						<b>以字母开头，长度在6~18之间，只能包含字母、数字和下划线</b>
+						<p class="p_1">请输入密码</p>
+						<p class="p2"></p>
+						<p class="p3">密码长度为6~18个字符</p>
+					</li>
+					<li>
+						<i><span>确认密码：</span></i>
+						<input type="password" name="" id="queren1" value="" class="ipt"/>
+						<p class="p_1">请输入确认密码</p>
+						<p class="p2"></p>
+						<p class="p3">密码输入不一致</p>
+					</li>
+					<li>
+						<i><span>验证码：</span></i>
+						<input type="text" name="" id="yanzheng1" value="" class="ipt"/>
+						<em></em>
+						<div><span>点击图片</span><span>刷新验证码</span></div>
+						<p class="p_1">请输入验证码</p>
+						<p class="p2"></p>
+						<p class="p3">验证码错误</p>
+					</li>
+				</ol>
+				<ol class="o2">
+					<li>
+						<i><span>用户名：</span></i>
+						<input type="text" name="user1" id="yonghu2" value="" class="ipt"/>
+						<b>长度为3~25个字符，不能以“_”开头或结尾</b>
+						<p class="p_1">请输入用户名</p>
+						<p class="p2"></p>
+						<p class="p3">该用户名包含非法字符</p>
+					</li>
+					<li class="l1">
+						<i><span>手机号码：</span></i>
+						<input type="text" name="tel" id="sj" value="" class="ipt"/>
+						<a href="">获取验证码</a>
+						<p class="p_1">请输入手机号码</p>
+						<p class="p2"></p>
+						<p class="p3">手机号码格式错误</p>
+					</li>
+					<li class="l2">
+						<i><span>验证码：</span></i>
+						<input type="text" name="" id="yanzheng2" value="" class="ipt"/>
+						<b>请输入手机收到的验证码</b>
+						<p class="p_1">请输入验证码</p>
+						<p class="p2"></p>
+						<p class="p3">验证码错误</p>
+					</li>
+					<li>
+						<i><span>设置密码：</span></i>
+						<input type="password" name="pwd1" id="mima2" value="" class="ipt"/>
+						<b>以字母开头，长度在6~18之间，只能包含字母、数字和下划线</b>
+						<p class="p_1">请输入密码</p>
+						<p class="p2"></p>
+						<p class="p3">密码长度为6~18个字符</p>
+					</li>
+					<li>
+						<i><span>确认密码：</span></i>
+						<input type="password" name="" id="queren2" value="" class="ipt"/>
+						<p class="p_1">请输入确认密码</p>
+						<p class="p2"></p>
+						<p class="p3">密码输入不一致</p>
+					</li>
+				</ol>
+			</div>
+			<a href="javascript:void(0)" class="a1" id="duigou"><b><em></em></b>我已阅读并同意<span>网站服务协议</span></a>
+			<a class="a2" id="anniu">立即注册</a>
+			<p class="p1">已有绿野会员帐号？&nbsp;<a href="land.html">立即登录</a></p>
+		</div>
+		<ul class="footer">
+			</li>
+			<li class="l-2"><p>绿野自游通，作为绿野网的专用支付平台，全程护驾您在绿野网的资金流转。</p></li>
+			<li class="l-3"><p><em></em>常见问题</p></li>
+			<li class="l-4"><p>Copyright&nbsp;1999-2014&nbsp;www.lvye.cn,绿野网版权所有&nbsp;&nbsp;&nbsp;京ICP证12009911号-1</p></li>
+		</ul>
+		
+		<script type="text/javascript">
+			$("#youxiang").click(function(){
+				$("#shouji").children("em").css({backgroundPosition:"0 0"})
+				$("#youxiang").children("em").css({backgroundPosition:"0 -14px"})
+				$(".o1").css({display:"block"})
+				$(".o2").css({display:"none"})
+			})
+			$("#shouji").click(function(){
+				$("#shouji").children("em").css({backgroundPosition:"0 -14px"})
+				$("#youxiang").children("em").css({backgroundPosition:"0 0"})
+				$(".o1").css({display:"none"})
+				$(".o2").css({display:"block"})
+			})
+			
+//			正则验证
+			var engName= /^[\u4e00-\u9fa5]{2,7}$|^[a-zA-Z]{1,14}$/;       //验证汉字不超过7个，字母不超过14个,写上的这个范围是算完之后的
+			var pattern = /^(((13[0-9]{1})|(15[0-9]{1})|(18[0-9]{1}))+\d{8})$/;    //验证手机号
+			var pass=/^[a-zA-Z]\w{5,17}$/;		//以字母开头，长度在6~18之间，只能包含字母、数字和下划线
+			var email=/^\w+([-+.]\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$/;
+			
+			$(".ipt").focus(function(){
+				$(this).css({border:"1px solid #F80"});
+				$(this).siblings(".o1 b").css({display:"block"});
+				$(this).siblings(".p_1").css({display:"none"});
+				$(this).siblings(".p2").css({display:"none"});
+				$(this).siblings(".p3").css({display:"none"});
+			})
+			
+//函数封装
+			function regTest(reg,me){
+				if(reg.test($(me).val())){
+					$(me).siblings('.p2').css({display:'block'});
+					$(me).siblings('.o1 b').css({display:'none'});
+					$(me).siblings('.p_1').css({display:'none'});
+					$(me).siblings('.p3').css({display:'none'});
+					$(me).css({border:"1px solid #bbb"});
+				}else if($(me).val()==''){
+					$(me).siblings(".o1 b").css({display:"none"});
+					$(me).siblings(".p3").css({display:"none"});
+					$(me).siblings(".p2").css({display:"none"});
+					$(me).siblings(".p_1").css({display:"block"});
+				}else{
+					$(me).siblings(".p_1").css({display:"none"});
+					$(me).siblings(".p2").css({display:"none"});
+					$(me).siblings(".p3").css({display:"block"});
+					$(me).siblings(".o1 b").css({display:"none"});
+				}
+			};
+			$('#yonghu1').blur(function(){
+				var me=this;
+				regTest(engName,me)
+			})
+			$('#yx').blur(function(){
+				var me=this;
+				regTest(email,me)
+			})
+			$('#mima1').blur(function(){
+				var me=this;
+				regTest(pass,me)
+			})
+			$('#yonghu2').blur(function(){
+				var me=this;
+				regTest(engName,me)
+			})
+			$('#mima2').blur(function(){
+				var me=this;
+				regTest(pass,me)
+			})
+			$('#sj').blur(function(){
+				var me=this;
+				regTest(pattern,me)
+			})
+			
+			$("#queren1").blur(function(){
+				if($('#queren1').val()==''){
+					$(this).siblings('.o1 b').css({display:'none'});
+					$(this).siblings('.p_1').css({display:'block'});
+					$(this).siblings('.p2').css({display:'none'});
+					$(this).siblings('.p3').css({display:'none'});
+				}else if($('#queren1').val()==$('#mima1').val()){
+					$(this).siblings('.o1 b').css({display:'none'});
+					$(this).siblings('.p_1').css({display:'none'});
+					$(this).siblings('.p2').css({display:'block'});
+					$(this).siblings('.p3').css({display:'none'});
+					$(this).css({border:"1px solid #bbb"});
+				}else{
+					$(this).siblings('.o1 b').css({display:'none'});
+					$(this).siblings('.p_1').css({display:'none'});
+					$(this).siblings('.p2').css({display:'none'});
+					$(this).siblings('.p3').css({display:'block'});
+				}
+			})
+			$("#yanzheng1").blur(function(){
+				if($('#yanzheng1').val()==''){
+					$(this).siblings('.o1 b').css({display:'none'});
+					$(this).siblings('.p_1').css({display:'block'});
+					$(this).siblings('.p2').css({display:'none'});
+					$(this).siblings('.p3').css({display:'none'});
+				}else{
+					$(this).siblings('.o1 b').css({display:'none'});
+					$(this).siblings('.p_1').css({display:'none'});
+					$(this).siblings('.p2').css({display:'block'});
+					$(this).siblings('.p3').css({display:'none'});
+				}
+			})
+			
+			$("#anniu").click(function(){
+				for(var i=0;i<$(".ipt").length;i++){
+					if($('.o1 .ipt').eq(i).val()==''){
+						$(".o1 b").css({display:"none"});
+						$(".p_1").css({display:"block"});
+						$(".p2").css({display:"none"});
+						$(".p3").css({display:"none"});
+					}
+				}
+//发送数据
+				var datas={
+					user:$("#yonghu1").val(),
+					Email:$("#yx").val(),
+					tel:$("#sj").val(),
+					pwd:$("#mima1").val(),
+					user1:$("#yonghu2").val(),
+					pwd1:$("#mima2").val(),
+				};
+				
+				var na=engName.test($("#yonghu1").val());
+				var na1=engName.test($("#yonghu2").val());
+				var tel=pattern.test($("#sj").val());
+				var code=pass.test($("#mima1").val());
+				var el=email.test($("#yx").val());
+				var code1=pass.test($("#mima2").val());
+				if($(".o1 .ipt").val()&&na&&el&&code){
+					$(this).siblings('.p_1').css({display:'none'});
+					$(this).siblings('.o1 b').css({display:'none'});
+					$(this).siblings('.p2').css({display:'none'});
+					$(this).siblings('.p2').css({display:'block'});
+					$.ajax({
+						type:"post",
+						url:"json.json",
+						data:datas,
+						success:function(data){
+							for(var i=0;i<data.length;i++){
+								$("li").append("<p>"+data[i].name+"</p>")
+							}
+						},
+						error:function(textThrown){
+							console.log(textThrown);
+						}
+					});
+				}else{
+					$(this).siblings('.o1 b').css({display:'block'});
+					$(this).siblings('.p_1').css({display:'none'});
+					$(this).siblings('.p2').css({display:'none'});
+					$(this).siblings('.p3').css({display:'none'});
+				}
+			})
+			
+			$("#duigou").click(function(){
+				$("#duigou").find("em").toggle(
+	  				function(){$("#duigou").children("em").css({backgroundPosition:"0 -16px"})}
+				);
+			})
+		</script>
+	</body>
+</html>

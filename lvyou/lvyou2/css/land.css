@@ -1,0 +1,236 @@
+@charset "utf-8";
+
+ul,ol,dl,dd,dt,li{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-weight: normal;
+}
+a{text-decoration: none;}
+body{
+	background: #48B36F;
+}
+.logo{
+	width: 900px;
+	margin: 0 auto;
+}
+.logo em{
+	display: inline-block;
+	width: 290px;
+	height: 57px;
+	background: url(../img/logo.png) no-repeat;
+	margin: 30px 0 0;
+	padding: 0 0 20px 0;
+}
+.content{
+	width: 900px;
+	padding: 96px 0 130px;
+	height: 263px;
+	margin: 0 auto;
+	background: #fff;
+	box-shadow: 0 0 12px #3A8F5A;
+	border-radius: 10px;
+	position: relative;
+}
+.content .tupian img{
+	width: 900px;
+	height: 260px;
+}
+.land{
+	width: 300px;
+	padding: 30px;
+	position: absolute;
+    top: 30px;
+    right: 50px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #FFF;
+}
+.land .l4 h3{
+    color: #47B26E;
+    font-size: 20px;
+    margin: 0 0 15px 0;
+}
+.land .l4 p{
+	width: 243px;
+	height: 24px;
+	line-height: 24px;
+	border: 1px solid #ff9327;
+	font-size: 12px;
+	color: #ff9326;
+	vertical-align: middle;
+	display: none;
+}
+.land .l4 p em{
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+	background: url(../img/icon3.png) no-repeat;
+	margin: 4px;
+	vertical-align: middle;
+}
+.land li input{
+	width: 245px;
+	height: 36px;
+	padding: 0 8px 0 45px;
+    border: 1px solid #ddd;
+    margin-bottom: 15px;
+    border-radius: 3px;
+    font-size: 14px;
+    font-family:"宋体";
+    background: url(../img/icon.png) no-repeat;
+    outline:none;
+}
+.land li input:first-child{
+	background-position: -464px -337px;
+}
+.land li input:last-child{
+	background-position: -464px -389px;
+}
+.land .l1 a{
+	border: 1px solid #E87400;
+    background-color: #FF9326;
+    width: 268px;
+    line-height: 35px;
+    padding: 0 15px;
+    border-radius: 3px;
+    text-align: center;
+	color: #fff;
+    font-size: 18px;
+    display: block;
+}
+.land .l1:hover a{
+	border: 1px solid #CB6500;
+    background-color: #FF730E;
+}
+.land .l2{
+	margin-top: 10px;
+	border-bottom: 1px dashed #aaa;
+	overflow: hidden;
+	height: 40px;
+}
+.land .l2 a{
+	float: left;
+}
+.land .l2 a{
+	color: #AAA;
+	font-size: 13px;
+}
+.land .l2 i{
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+	background: #48B36F;
+	border-radius: 3px;
+	vertical-align: middle;
+	margin-top: -4px;
+}
+.land .l2 a em{
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+	background: url(../img/icon1.png) no-repeat;
+	margin-right: 5px;
+	vertical-align: middle;
+	margin-top: -6px;
+	background-position: 0 -16px;
+}
+.land .l2 span{
+	float: right;
+	color: #AAA;
+	font-size: 13px;
+	margin:0 10px;
+	cursor: pointer;
+}
+.land .l2 span:hover{
+	text-decoration: underline;
+}
+.land .l2 b{
+	float: right;
+	display: inline-block;
+	width: 1px;
+	height: 13px;
+	background: #aaa;
+	margin-top: 3px;
+}
+.land .l2 .s1{
+	margin-right: 0;
+}
+.land .l3{
+	height: 70px;
+	font-size: 13px;
+}
+.land .l3 span{
+	color: #aaa;
+	line-height: 70px;
+}
+.land .l3 a{
+	display: inline-block;
+	padding: 0 20px;
+    height: 34px;
+    width: 54px;
+    border: 1px solid #DDD;
+    border-radius: 5px;
+    color: #47B26E;
+    text-align: center;
+    line-height: 34px;
+    background: url(../img/icon.png);
+    background-position: 0 -235px;
+    margin-left: 22px;
+}
+.land .l3 a:hover{
+	background-position: 0 -282px;
+}
+.footer{
+	width: 900px;
+	margin: 0 auto;
+}
+.footer .l-1{
+	text-align: center;
+	color: #fff;
+	font-size: 14px;
+	margin: 20px 0;
+}
+.footer .l-1 span{
+	margin: 0 10px;
+	padding: 0 10px;
+}
+.footer .l-1 a{
+	color: #fff;
+}
+.footer .l-1 a:hover{
+	text-decoration: underline;
+}
+.footer .l-2 p{
+	color: #fff;
+    text-align: center;
+    font-size: 14px;
+    line-height: 30px;
+    margin-top: 20px;
+}
+.footer .l-3 p{
+	color: #FFFF00;
+    font-size: 14px;
+    text-align: center;
+    margin-top: 20px;
+    width: 80px;
+    margin: 0 auto;
+}
+.footer .l-3 p:hover{
+	text-decoration: underline;
+	cursor: pointer;
+}
+.footer .l-3 p em{
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	background: url(../img/icon2.png) no-repeat;
+	vertical-align: middle;
+}
+.footer .l-4 p{
+	color: #ebebeb;
+    font-size: 12px;
+    text-align: center;
+}

@@ -1,0 +1,192 @@
+@charset "utf-8";
+.header{
+	width:100%;
+	height:28px;
+	background: #FAFAFA;
+}
+.ma-rg>a,.ma-rg>span{
+	display: inline-block;
+	float: right;
+}
+.header a,span{
+	color: #666;
+	line-height: 28px;
+	margin-left: 12px;
+}
+.ma-rg{
+	width: 1170px;
+	margin: 0 auto;
+}
+/*LOGO*/
+.logo{
+	width: 100%;
+	height: 62px;
+	margin: 0 auto;
+	margin-bottom: 16px;
+	/*overflow: hidden;*/
+}
+.logo>h1{
+	display: inline-block;
+	margin-top: 18px;
+	margin-right: 154px;
+	float: left;
+	margin-left: 50px;
+}
+.logo>h1>img{
+	width: 224px;
+	height: 44px;
+	
+}
+.logo-ctn{
+	width: 414px;
+	height: 36px;
+	border: 1px solid #2F8C2F;
+	border-radius: 5px;
+	float: left;
+	margin-top: 20px;
+	background-color: #FFFFFF;
+}
+.logo-box{
+	width: 60px;
+	height:28px;
+	float: left;
+	margin: 4px 0;
+	line-height:28px;
+	text-align: center;
+    /*background: url(img/lvye_logo.png) no-repeat center right*/;
+	border-right: 1px solid #F1F1F1;
+	position: relative;
+	cursor: pointer;
+	color:#262B2F;
+	font-size: 13px;
+}
+.logo-box:hover>ul{
+	display: block;
+}
+.logo-box>ul{
+	background-color:#fff;
+	position: absolute;
+	top: 28px;
+	left: 0;
+	padding: 0;
+	margin: 0;
+	z-index: 100;
+	border: 1px solid #F1F1F1;
+	display: none;
+	height: 152px;
+}
+.logo-box>ul>li{
+	width: 60px;
+	height: 30px;
+}
+.logo-box>ul>li:hover{
+	background-color:#9B9B9B;
+}
+.ipt1{
+	border: none;
+	height: 32px;
+	width: 200px;
+	margin: 2px 0;
+	float: left;
+	margin-left: 5px;
+}
+.btn{
+	border: none;
+	width: 60px;
+	height: 36px;
+	float: right;
+	background-color: #237B22;
+	text-align: center;
+	color: white;
+}
+.app{
+	width: 198px;
+	height: 48px;
+	float: right;
+	margin-top: 14px;
+	background: url(img/down_phone.png) no-repeat;
+}
+.app span{
+	color: #666;
+    font-size:14px;
+    margin-bottom: 6px;
+    padding-top: 4px;
+    padding-left: 50px;
+} 
+.app a{
+	font-size: 12px;
+	color: #ccc;
+}
+.app a:hover{
+	color: #FFA200;
+}
+.app .pa-a{
+	padding-left: 62px;
+	margin-right: 13px;
+}
+/*nav导航*/
+.nav-box{
+	width: 100%;
+	height: 40px;
+	background-color: #3CB43C;
+}
+.nav-box .nav{
+	width: 100%;
+	margin: 0 auto;
+	height: 40px;
+}
+.nav-box .nav>li{
+	display: block;
+	float: left;
+	line-height: 40px;
+	font-size: 16px;
+    font-family: "microsoft yahei";
+    position: relative;
+}
+.nav-box .nav>li:hover{
+	background-color:#319630;
+}
+.nav-box .nav>li:hover .nav-olis{
+	display:block;
+}
+.nav-box .nav>.nav-lis{
+	background-color:#319630;
+	width: 140px;
+	text-align: center;
+	margin-right: 20px;
+	margin-left: 80px;
+}
+.nav-box .nav>li>a{
+	color: #fff;
+    display: block;
+    padding: 0 22px;
+}
+.nav-box .nav .nav-olis{
+	position: absolute;
+	top: 40px;
+	left: 0;
+	padding: 0;
+	border: 1px solid red;
+	display: block;
+    background-color: #F0F0F0;
+    border: 1px solid #3CB43C;
+    border-top: none;
+    display: none;
+    z-index: 100;
+}
+.nav-box .nav .nav-olis>li>a{
+	display: block;
+	width: 81px;
+	height: 30px;
+	padding: 0 22px;
+	text-align: center;
+	font-size: 12px;
+	color: #666;
+	line-height: 30px;
+} 
+.nav-box .nav .nav-olis>li:hover{
+	background-color: #3CB43C;
+}
+.nav-box .nav .nav-olis>li:hover a{
+	color: #fff;
+}

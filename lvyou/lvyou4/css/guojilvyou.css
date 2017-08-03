@@ -1,0 +1,349 @@
+@charset "utf-8";
+ul,li{list-style: none;margin: 0;padding: 0;}
+body,h1, h2, h3, h4, h5, h6, ol, dl, dt, dd, ul, li, form {
+    margin: 0;
+    padding: 0;
+}
+body{width: 100%;
+/*height: 2300px;*/
+    
+    line-height: 1.5;
+    background-color: #fff;
+    color: #13334d;
+    font-family: tahoma,arial,"Hiragino Sans GB","\5b8b\4f53",sans-serif;
+
+}
+a{text-decoration: none;}
+/*.b{
+	width: 1349px;
+	height: 26px;
+}
+.c{
+	width: 1349px;
+	height: 108px;
+}*/
+.page-wrapper{
+	width: 100%;
+	height: 1450px;
+}
+.box{
+	width: 100%;
+	height: 400px;
+	position:relative;
+}
+
+
+
+
+.container{
+	width: 990px;
+	height: 1000px;
+    margin: auto;
+    margin-top: 30px;
+}
+.items {
+	width: 1005px;
+	height: 900px;
+}
+.items a{
+	color: #355976;
+    text-decoration: none;
+    
+}
+.items li{
+	color: #355976;
+    text-decoration: none;
+    width: 320px;
+    height: 380px;
+    position: relative;
+    list-style: none;
+    margin-right: 15px;
+    margin-bottom: 15px;
+    float: left;
+    overflow: hidden;
+}
+.item-msg {
+    width: 295px;
+    height: 180px;
+    margin: auto;
+    margin-top: 175px;
+    opacity: .95;
+    background-color: #fff;
+}
+.logo-wrapper{
+	width: 295px;
+    height: 54px;
+	text-align: center;
+}
+.item-logo{
+	width: 180px;
+    height: 50px;
+	max-height: 50px;
+    margin: 0px auto;
+}
+.item-desc{
+	margin: 0;
+    padding: 0 15px;
+    font-size: 13px;
+    line-height: 18px;
+    word-break: break-all;
+    color: #000;
+    font-family: 'Microsoft Yahei', simsong;
+}
+
+
+
+.offshore {
+    width: 490px !important;
+    display: inline-block;
+    margin: 0px auto;
+    position: relative;
+    text-decoration: none;
+}
+.offshore img {
+    width: 490px;
+}
+
+
+
+
+
+
+
+
+
+.footer {
+    background: #445350 url(../img/footer_bg.jpg) no-repeat center bottom;
+    box-shadow: inset 0 5px 15px rgb(26, 54, 49);
+    width: 100%;
+    height: 267px;
+}
+.inner-footer {
+	width: 960px;
+    height: 215px;
+    padding: 20px 0 30px;
+    color: #FFF;
+    margin: 0 auto;
+}
+.footertop{
+	width: 960px;
+    height: 163px;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px dashed;
+}
+.p{
+	width: 72px;
+    height: 130px;
+    float: left;
+    margin-right: 60px;
+    
+}
+.o{
+	width: 60px;
+    height: 70px;
+    float: left;
+    margin-right: 60px;
+}
+.i{
+	width: 60px;
+    height: 90px;
+    float: left;
+    margin-right: 60px;
+}
+.footerlink{
+	width: 372px;
+    height: 130px;
+    float: left;
+}
+.footerlink dl{
+	width: 72px;
+    height: 130px;
+}
+.footerlink dl dt {
+    font-family: "microsoft yahei";
+    font-size: 15px;
+    margin-bottom: 10px;
+    width: 72px;
+    height: 20px;
+}
+.footerlink dl dd {
+    line-height: 20px;
+    display: block;
+    width: 72px;
+    height: 20px;
+    font-family: 'simsun' ,'Microsoft Yahei';
+    font-size: 12px;
+    
+}
+.footerlink dl dd a{
+	color:white;
+}
+.footerlink dl dd a:hover{
+	color:green;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.weibowrap{
+	width: 264px;
+    height: 142px;
+    float: left;
+}
+.sinaweibo{
+	width: 72px;
+    height: 142px;
+    float: left;
+    font-size: 12px;
+    margin-right: 60px;
+    line-height: 20px;
+    font-family: microsoft yahei;      
+}
+.sinaweibo .icons{
+	background-position: -92px 0;
+	width: 73px;
+    height: 72px;
+    margin-bottom: 10px;
+    background-image: url(../img/2345_image_file_copy_2.jpg)!important;
+    background-repeat: no-repeat!important;
+
+}
+.sinaweibo a{
+	font-size: 12px;
+	color: white;
+	width:72px;
+	height:20px;
+	display: inline-block;
+}
+.weichat{
+	width:72px;
+	height:102px;
+	text-align: center;
+    position: relative;
+    font-size: 12px;
+    float: left;
+    margin-right: 60px;
+    line-height: 20px;
+    font-family: microsoft yahei;
+}
+.weichat .icons {
+    background-position: 0 0;
+    width: 90px;
+    height: 110px;
+    margin-bottom: 10px;
+    background-image: url(../img/feizhuguoji/ewmicon.jpg)!important;
+    background-repeat: no-repeat!important;
+}
+
+
+
+
+
+
+
+
+
+.mobile-client{
+	width: 264px;
+    height: 84px;
+    float: left;
+}
+.mobile-client h4 {
+    font-size: 15px;
+    font-family: 'microsoft yahei';
+    display: block;
+    width: 264px;
+    height: 20px;
+}
+.mobile-client ul{
+	width: 264px;
+	    margin-top: 10px;
+   font-family: 'simsun' ,'Microsoft Yahei';
+    font-size: 12px;
+    list-style: none;
+}
+.mobile-client ul li {
+    float: left;
+    margin-right: 12px;
+    list-style-type: none;
+    display: list-item;
+    text-align: -webkit-match-parent;
+}
+.lvyehd {
+    background-position: 0 -91px;
+    width: 54px;
+    height: 54px;
+    display: block;
+    background-image: url(../img/2345_image_file_copy_2.jpg)!important;
+    background-repeat: no-repeat!important;
+}
+.lvyeld {
+    background-position: 0 -166px;
+    width: 54px;
+    height: 54px;
+    display: block;
+    background-image: url(../img/2345_image_file_copy_2.jpg)!important;
+    background-repeat: no-repeat!important;
+}
+.lvyeski {
+    background-position: -74px -92px;
+    width: 54px;
+    height: 54px;
+    display: block;
+    background-image: url(../img/2345_image_file_copy_2.jpg)!important;
+    background-repeat: no-repeat!important;
+}
+.lvye6f  {
+    background-position: -74px -166px;
+    width: 54px;
+    height: 54px;
+    display: block;
+    background-image: url(../img/2345_image_file_copy_2.jpg)!important;
+    background-repeat: no-repeat!important;
+}
+.copyright{
+	font-size: 10px;
+}
+
+
+
+
+
+ul,li{list-style: none;margin: 0px;padding: 0px;}
+.box img{width: 100%;height: 100%;position:absolute;}
+.box ul{
+				width:80px;position:absolute;bottom:0;right: 0;margin: 0 auto;
+				
+			}
+		.box ul li{
+				width:20px;height:20px;background: gainsboro;float: left;margin-right:5px;border-radius:100%;
+				text-align: center;line-height: 20px;
+			}
+		.box ul .current{
+				background-color: lawngreen;
+			}
+			
+
+
+
+
+
+
+
+
+
+.items li .text
+{ width: 320px;
+    height: 0px; overflow:hidden; position:absolute; left:0; bottom:0; background:rgba(96,96,96,0.8); font-size:12px; color: #0063AF;}
+
+.items li .text p
+{ text-align:center; color:#fff; font-size:40px; font-weight:900; line-height:180%; padding:5px 10px; clear:both;margin-top: 115px;}

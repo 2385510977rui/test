@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>国际旅游</title>
+		<link rel="stylesheet" href="css/guojilvyou.css" />
+		<link rel="stylesheet" href="css/weibu.css" />
+		<link rel="stylesheet" href="css/toubu.css" />
+		<style>
+
+		</style>
+	</head>
+
+	<body>
+		<!--<div class="b">
+		</div>
+		<div class="c">
+		</div>-->
+
+		<div class="header">
+			<div class="ma-rg">
+				<a href="../lvyou2/register.html" class="">注册</a>
+				<span>|</span>
+				<a href="../lvyou2/land.html">登录</a>
+			</div>
+		</div>
+		<!--LOGO-->
+		<div class="logo">
+			<h1>
+					<img src="img/lvye_logo.png"/>
+				</h1>
+			<div class="logo-ctn">
+				<!--添加鼠标经过时添加样式-->
+				<div class="logo-box">活动
+					<ul>
+						<li>
+							<a href="" style="color: darkgrey">活动</a>
+						</li>
+						<li>
+							<a href="" style="color: darkgrey">文章</a>
+						</li>
+						<li>
+							<a href="" style="color: darkgrey">帖子</a>
+						</li>
+						<li>
+							<a href="" style="color: darkgrey">用户</a>
+						</li>
+						<li>
+							<a href="" style="color: darkgrey">更多</a>
+						</li>
+					</ul>
+				</div>
+				<input type="text" name="" id="" value="" placeholder="输入目的地、景点名等关键词" class="ipt1" />
+				<input type="button" id="" value="搜索" class="btn" />
+			</div>
+			<div class="app">
+				<a href="../lvyou2/App.html" target="_blank"><span>APP 下载</span></a>
+				<br />
+				<a href="" title="绿野活动" class="pa-a">绿野活动</a>
+				<a href="" title="六只脚">六只脚</a>
+			</div>
+		</div>
+		<!--导航-->
+		<div class="nav-box">
+			<ul class="nav">
+				<li class="nav-lis">
+					<a href="../lvyou1/index.html">首页</a>
+				</li>
+				<li>
+					<a href="../lvyou1/activity.html" target="_blank">活动</a>
+					<ol class="nav-olis">
+						<li>
+							<a href="">自由活动</a>
+						</li>
+						<li>
+							<a href="">AA活动</a>
+						</li>
+						<li>
+							<a href="">自游通</a>
+						</li>
+					</ol>
+				</li>
+				<li>
+					<a href="../lvyou2/beimei.html" target="_blank">专题</a>
+				</li>
+				<li>
+					<a href="../lvyou3/ly.html" target="_blank">咨询</a>
+					<ol class="nav-olis">
+						<li>
+							<a href="">户外资讯</a>
+						</li>
+						<li>
+							<a href="">装备频道</a>
+						</li>
+						<li>
+							<a href="">游记攻略</a>
+						</li>
+						<li>
+							<a href="">户外知识</a>
+						</li>
+					</ol>
+				</li>
+				<li>
+					<a href="chujinghuodong.html" target="_blank">论坛</a>
+					<ol class="nav-olis">
+						<li>
+							<a href="">AA活动</a>
+						</li>
+						<li>
+							<a href="">绿野风版</a>
+						</li>
+						<li>
+							<a href="">绿野滑雪</a>
+						</li>
+						<li>
+							<a href="">自驾越野</a>
+						</li>
+						<li>
+							<a href="">自由结伴</a>
+						</li>
+					</ol>
+				</li>
+				<li>
+					<a href="../lvyou2/App.html" target="_blank">APP</a>
+				</li>
+				<li>
+					<a href="">六只脚</a>
+					<ol class="nav-olis">
+						<li>
+							<a href="">户外线路</a>
+						</li>
+						<li>
+							<a href="">线路大全</a>
+						</li>
+						<li>
+							<a href="">线路精选</a>
+						</li>
+						<li>
+							<a href="">线路地图</a>
+						</li>
+					</ol>
+				</li>
+				<li>
+					<a href="../lvyou2/xiuxian.html" target="_blank">休闲</a>
+				</li>
+				<li>
+					<a href="../lvyou3/ly1.html" target="_blank">度假</a>
+				</li>
+			</ul>
+		</div>
+
+		<div id="page">
+			<div class="page-wrapper">
+
+				<div class="box" id="box">
+					<a href="../xiangmu/ly.html" target="_blank">
+						<img src="img/img/1483076024983.jpg" alt="" />
+					</a>
+					<a href="../xiangmu/ly.html" target="_blank">
+						<img src="img/img/1484184853539.jpg" alt="" />
+					</a>
+					<a href="../xiangmu/ly.html" target="_blank">
+						<img src="img/img/1544923359.jpg" alt="" />
+					</a>
+
+					<ul id="qqq">
+						<li class="current">1</li>
+						<li>2</li>
+						<li>3</li>
+					</ul>
+				</div>
+
+				<script>
+					var n = 0;
+
+					function fun() {
+						$('#box img').last().animate({ opacity: '0' }, 500, function() {
+							$('.box').prepend($('#box img').last());
+							$('#box img').first().css({ opacity: '1' });
+							if(n < $('#box img').length - 1) {
+								n++;
+								$('#qqq li').eq(n).addClass('current').siblings().removeClass('current');
+							} else {
+								 n = 0;
+								$('#qqq li').eq(n).addClass('current').siblings().removeClass('current');
+
+							};
+
+						});
+					};
+					var t = setInterval(fun, 2000);
+					//			$('.box').mouseover(function(){
+					//				clearInterval(t);
+					//			});
+					//			$('.box').mouseleave(function(){
+					//				t=setInterval(fun,2000);
+					//			});
+					fun();
+				</script>
+				
+
+				<!--<div class="header-img" style='background:url("https://img.alicdn.com/tps/TB1fwXmPVXXXXc_XFXXXXXXXXXX-1700-400.png") no-repeat top center;'></div>-->
+				<div class="container">
+					<ul class="items clearfix" data-spm="hki123" id="items">
+						<a href="../xiangmu/ly.html" target="_blank">
+							<li style='background:url(img/feizhuguoji/a/TB1zgY8KpXXXXbDXpXXXXXXXXXX-320-380.jpg)   no-repeat top center;background-size: cover;'>
+								<div class="item-msg">
+									<div class="logo-wrapper">
+										<img class="item-logo" src="img/feizhuguoji/a/TB1nZkaKpXXXXXeXpXXXXXXXXXX-180-50.jpg">
+									</div>
+									<p class="item-desc">
+										泰国当地旅游公司，每年服务超过20万自由行客人。由生活在泰国，精通中泰双语的客服提供亲更精准的资讯和更当地化的游玩建议。
+									</p>
+								</div>
+
+								<div class="text">
+
+									<p>泰国</p>
+								</div>
+							</li>
+						</a>
+						<a href="../xiangmu/ly.html">
+							<li style='background:url(img/feizhuguoji/a/TB1GugsKVXXXXXBaXXXXXXXXXXX-521-619.png) no-repeat top center;background-size: cover;'>
+								<div class="item-msg">
+									<div class="logo-wrapper">
+										<img class="item-logo" src="img/feizhuguoji/a/TB2frzbtXXXXXbYXpXXXXXXXXXX_!!2879131205.png_100x100.jpg">
+									</div>
+									<p class="item-desc">
+										泰国当地的华人旅行社，总部在首都曼谷，在清迈、芭提雅、苏梅岛、普吉岛、甲米都提供旅游接待。经营范围：泰国各个机场接送机、预订酒店/机票和景点门票、接待自由行和各种旅游团、提供私家导游订制高端旅游服务。
+									</p>
+								</div>
+								<div class="text">
+									<p>泰国</p>
+								</div>
+							</li>
+						</a>
+
+						<a href="../xiangmu/ly.html">
+							<li class="last-item" style='background:url(img/feizhuguoji/a/TB1zK7TJpXXXXciXpXXSutbFXXX.jpg) no-repeat top center;background-size: cover;'>
+								<div class="item-msg">
+									<div class="logo-wrapper">
+										<img class="item-logo" src="img/feizhuguoji/a/TB1c8cMJpXXXXbFXFXXwu0bFXXX.png">
+									</div>
+									<p class="item-desc">
+										飞猪首家执行取消政策的酒店卖家，拥有全球过万家可免费取消的酒店。因自然灾害，航班延误，怀孕等不可抗拒因素退款的，我们全力协助每位客人将损失减到最少。
+									</p>
+								</div>
+								<div class="text">
+									<p>威尼斯</p>
+								</div>
+							</li>
+						</a>
+
+						<a href="../xiangmu/ly.html">
+							<li style='background:url(img/feizhuguoji/a/TB2mBV8eYXlpuFjy1zbXXb_qpXa_!!3076373118.jpg) no-repeat top center;background-size: cover;'>
+								<div class="item-msg">
+									<div class="logo-wrapper">
+										<img class="item-logo" src="img/feizhuguoji/a/TB2bkdKe9XlpuFjy0FeXXcJbFXa_!!3076373118.jpg">
+									</div>
+									<p class="item-desc">
+										韩国百乐达斯旅游集团，成立于1972年，深耕旅游行业45年，能为您提供门票、演出、优惠购物、酒店住宿、自由行、跟团游等多方面的旅游服务。百乐达斯集团于2017年正式与飞猪达成战略合作，我们会携手飞猪，竭力为每一位客人带来最难忘的韩国之旅。
+									</p>
+								</div>
+								<div class="text">
+									<p>韩国</p>
+								</div>
+							</li>
+						</a>
+
+						<a href="../xiangmu/ly.html">
+							<li style='background:url(img/feizhuguoji/a/TB25y5coFXXXXbGXXXXXXXXXXXX_!!2176354635.jpg) no-repeat top center;background-size: cover;'>
+								<div class="item-msg">
+									<div class="logo-wrapper">
+										<img class="item-logo" src="img/feizhuguoji/a/TB2j.SloFXXXXXRXXXXXXXXXXXX_!!2176354635.jpg">
+									</div>
+									<p class="item-desc">
+										在别处自由行是由一群热爱旅游的年轻人创立的澳大利亚旅行社。我们为您提供澳大利亚和新西兰专业准确的旅游信息，以及优惠的产品价格。一站式服务助您拥有一次完美的澳新自由行。
+									</p>
+								</div>
+								<div class="text">
+									<p>澳大利亚</p>
+								</div>
+							</li>
+						</a>
+
+						<a href="../xiangmu/ly.html">
+							<li class="last-item" style='background:url(img/feizhuguoji/a/TB1BHf2KpXXXXaDXFXXXXXXXXXX-320-380.jpg) no-repeat top center;background-size: cover;'>
+								<div class="item-msg">
+									<div class="logo-wrapper">
+										<img class="item-logo" src="img/feizhuguoji/a/TB1cPY.NXXXXXa9apXXXXXXXXXX-360-96.png">
+									</div>
+									<p class="item-desc">
+										日本汐留旅行旗舰店由SoftBank株式会社独资设立。 通过与日本最大的旅游公司JTB建立战略合作关系，我们可以向广大中国消费者提供由高端至低端的各类旅游商品，内容涵盖酒店住宿，优惠购物，日本传统文化体验等， 让您能够体验到最全面，亦是最真实的东瀛之旅。
+									</p>
+								</div>
+								<div class="text">
+									<p>日本</p>
+								</div>
+							</li>
+						</a>
+
+					</ul>
+					<!--<a class="offshore" href=""  style="width:50%;">
+        <img src="img/img/TB18fotPpXXXXaRXXXXXXXXXXXX-1174-200.png" alt="">
+        </a>
+        <a class="offshore" href=""   style="width:50%;">
+        <img src="img/img/TB1nWZkPpXXXXaYXpXXXXXXXXXX-1174-200.png" alt="">
+        </a>-->
+				</div>
+			</div>
+		</div>
+
+		<!--尾部-->
+		<div class="tail">
+			<div class="tail1">
+				<div class="tail-1">
+					<div class="a1">
+						<em></em>
+						<h5>
+								关于我们
+							</h5>
+						<ul>
+							<li>
+								<a href="">绿野简介</a>
+							</li>
+							<li>
+								<a href="">企业文化</a>
+							</li>
+							<li>
+								<a href="">联系我们</a>
+							</li>
+							<li>
+								<a href="">加入我们</a>
+							</li>
+							<li>
+								<a href="">广告与合作</a>
+							</li>
+							<li>
+								<a href="">网站声明</a>
+							</li>
+						</ul>
+					</div>
+					<div class="a2">
+						<em></em>
+						<h5>
+								帮助中心
+							</h5>
+						<ul>
+							<li>
+								<a href="">新手入门</a>
+							</li>
+							<li>
+								<a href="">账号问题</a>
+							</li>
+							<li>
+								<a href="">问题投诉</a>
+							</li>
+							<li>
+								<a href="">为什么参加绿野活动</a>
+							</li>
+						</ul>
+					</div>
+					<div class="a3">
+						<em></em>
+						<h5>
+								实用工具
+							</h5>
+						<ul>
+							<li>
+								<a href="">网址导航</a>
+							</li>
+							<li>
+								<a href="">网站地图</a>
+							</li>
+							<li>
+								<a href="">领队申请</a>
+							</li>
+							<li>
+								<a href="">绿野供应商</a>
+							</li>
+							<li>
+								<a href="">绿野营销商</a>
+							</li>
+						</ul>
+					</div>
+					<div class="a4">
+						<em></em>
+						<div id="qrcode"></div>
+					</div>
+				</div>
+			</div>
+			<div class="tail2">
+				<div class="tail-2">
+					<p>北京绿野视界信息技术有限公司 Copyright 1999-2014 www.lvye.cn,绿野户外网版权所有 京ICP证12009911号-1 电信业务审批[2003]字第361号</p>
+					<ul class="links">
+						<li>
+							<a href="">户外旅游</a>
+						</li>
+						<li>
+							<a href="">户外线路</a>
+						</li>
+						<li>
+							<a href="">户外帮</a>
+						</li>
+						<li>
+							<a href="">艺龙旅游指南</a>
+						</li>
+						<li>
+							<a href="">汽车问答</a>
+						</li>
+						<li>
+							<a href="">汽车品牌</a>
+						</li>
+						<li>
+							<a href="">爱卡汽车评测</a>
+						</li>
+						<li>
+							<a href="">蚂蜂窝旅游攻略</a>
+						</li>
+						<li>
+							<a href="">穷游网</a>
+						</li>
+						<li>
+							<a href="">网易旅游</a>
+						</li>
+						<li>
+							<a href="">出境自助游</a>
+						</li>
+						<li>
+							<a href="">21世纪房车网</a>
+						</li>
+						<li>
+							<a href="">旅行社</a>
+						</li>
+						<li>
+							<a href="">中国旅游信息网</a>
+						</li>
+						<li>
+							<a href="">一日游</a>
+						</li>
+						<li>
+							<a href="">环球滑雪</a>
+						</li>
+						<li>
+							<a href="">合肥论坛</a>
+						</li>
+						<li>
+							<a href="">特价酒店</a>
+						</li>
+						<li>
+							<a href="">中华网旅游</a>
+						</li>
+						<li>
+							<a href="">百酷特色住宿</a>
+						</li>
+						<li>
+							<a href="">央视网旅游</a>
+						</li>
+						<li>
+							<a href="">同程网</a>
+						</li>
+						<li>
+							<a href="">编织人生</a>
+						</li>
+						<li>
+							<a href="">迈点网</a>
+						</li>
+						<li>
+							<a href="">凤凰古城</a>
+						</li>
+						<li>
+							<a href="">POCO旅游</a>
+						</li>
+						<li>
+							<a href="">住哪网</a>
+						</li>
+						<li>
+							<a href="">今题网</a>
+						</li>
+						<li>
+							<a href="">沈阳旅行社</a>
+						</li>
+						<li>
+							<a href="">旅游</a>
+						</li>
+						<li>
+							<a href="">理想股票论坛</a>
+						</li>
+						<li>
+							<a href="">中国航空旅游网</a>
+						</li>
+						<li>
+							<a href="">中国国际旅行社</a>
+						</li>
+						<li>
+							<a href="">孔夫子旧书网</a>
+						</li>
+						<li>
+							<a href="">锦江旅游</a>
+						</li>
+						<li>
+							<a href="">旅游网</a>
+						</li>
+						<li>
+							<a href="">慧择网</a>
+						</li>
+						<li>
+							<a href="">宜春新闻网</a>
+						</li>
+						<li>
+							<a href="">五分旅游网</a>
+						</li>
+						<li>
+							<a href="">火车票网上订票</a>
+						</li>
+						<li>
+							<a href="">旅游百事通</a>
+						</li>
+						<li>
+							<a href="">蚂蚁短租</a>
+						</li>
+						<li>
+							<a href="">九游网</a>
+						</li>
+						<li>
+							<a href="">火车票预订</a>
+						</li>
+						<li>
+							<a href="">火车票网上查询</a>
+						</li>
+						<li>
+							<a href="">梦之旅</a>
+						</li>
+						<li>
+							<a href="">长岛旅游</a>
+						</li>
+						<li>
+							<a href="">机票</a>
+						</li>
+						<li>
+							<a href="">户外装备</a>
+						</li>
+						<li>
+							<a href="">更多友情链接</a>
+						</li>
+						<li>
+							<a href="">申请友情链接</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+		<script src="js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/jquery.qrcode.min.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			//			for(var i=0;i<$('.i-nav-1 img').length;i++){
+			//				$('.i-nav-1 img').siblings(i).mouseenter(function(){
+			//				    $('.wenzi').eq(i).css({display:'block'})
+			//			});
+			//			    $('.i-nav-1 img').siblings(i).mouseleave(function(){
+			//				    $('.wenzi').eq(i).css({display:'none'});
+			//			}); 
+			//			}
+			//			function over(){
+			//				if($('.wenzi').is(':visible')){
+			//					$('.wenzi').show();
+			//				}else{
+			//					$('.wenzi').hide();
+			//				}
+			//			};
+			//			$('.i-nav-1 img').hover(over,over);
+			$('.i-nav-1').mouseover(function() {
+				//          	$(this).siblings('.wenzi').css({display:'block'})
+				$(this).children('.wenzi').slideDown({ marginTop: '-200px' }, 1200).css({ display: 'block' });
+			})
+			$('.i-nav-1').mouseleave(function() {
+				//          	$(this).siblings('.wenzi').css({display:'none'})
+				$(this).children('.wenzi').slideUp({ marginTop: '-200px' }, 1200).css({ display: 'none' });
+			});
+
+			//二维码
+			jQuery('#qrcode').qrcode({
+				render: "canvas", //也可以替换为table
+				width: 100,
+				height: 100,
+				text: "http://www.baidu.com"
+			});
+		</script>
+
+		<script>
+			$(function() {
+				$('#items li').hover(function() {
+					$('.text', this).stop().animate({
+						height: '380px'
+					});
+				}, function() {
+					$('.text', this).stop().animate({
+						height: '0'
+					});
+				});
+			});
+		</script>
+
+	</body>
+
+</html>

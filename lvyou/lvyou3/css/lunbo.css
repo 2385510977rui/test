@@ -1,0 +1,62 @@
+body,ul,li{padding: 0; margin: 0;}
+ul,li{list-style: none;}
+body{font-size:12px;}
+
+
+#demo1{ 
+    position: relative;    
+    width: 100%;     
+    overflow-x: hidden;
+    background-color: #000000;
+}
+#demo1 .img_list{width:1300px;overflow: hidden; position: relative; height: 480px;margin:0 auto;}
+/* 根据图片的张数来设定ul的宽度 */
+.img_list ul{ width: 6500px; position: absolute; height: 480px; left: 0px; }
+.img_list li{ float: left; width: 1300px;}
+.img_list img{width: 1300px; height: 480px;}
+/* 图片对应的按钮样式 */
+.btn_list ul{ position: absolute; right: 20px; bottom: 35px; }
+.btn_list li{ float: left; margin-right: 10px; color: #999; border: 1px solid #ccc; }
+.btn_list li:hover,.btn_list li.on{ cursor: pointer; border: 1px solid #E204A4;}
+.btn_list li img{ width: 30px; height: 15px; display: block;}
+/* 左右点击的按钮样式 */
+#demo1 .toLeft,#demo1 .toRight{
+    display: none;
+    position: absolute;
+    width: 20px;
+    height: 30px;    
+    top: 110px;    
+    background: url(../img/banner/zbbg_24.png) no-repeat 0 0;;
+}
+/* 图片对应的说明*/
+.img_intro{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 25px;
+}
+.img_intro .img_intro_bg,.img_intro .text{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+.img_intro .img_intro_bg{
+    background: #000;    
+    opacity: .3;
+    z-index: 999;
+}
+.img_intro .text{
+    padding: 5px 10px;
+    z-index: 1000;
+    color: #999;
+}
+#demo1 .toLeft{
+    left: -40px;
+}
+#demo1 .toRight{
+    right: -40px;
+    background-position: -50px -150px;
+}

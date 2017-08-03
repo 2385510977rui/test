@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>Jxdx用户中心</title>
+		<link rel="stylesheet" type="text/css" href="css/land.css"/>
+		<script src="js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<div class="logo"><em></em></div>
+		<div class="content">                      <!--中间白色圆角矩形-->
+			<div class="tupian">
+				<img src="img/bg.jpg"/>
+			</div>
+			<ul class="land">
+				<li class="l4">
+					<h3>Jxdx用户中心</h3>
+					<p class="p1"><em></em>用户名不能为空</p>
+					<p class="p2"><em></em>密码不能为空</p>
+					<p class="p3"><em></em>手机号码/邮箱/用户名格式错误</p>
+					<p class="p4"><em></em>密码错误</p>
+				</li>
+				<li>
+					<input type="text" placeholder="手机号码/邮箱/用户名" id="yonghu" class="ipt" name="user"/>
+					<input type="password" placeholder="密码" id="mima" class="ipt" name="pwd"/>
+				</li>
+				<li class="l1"><a href="javascript:void(0)" id="denglu">登录</a></li>
+				<li class="l2">
+					<a href="javascript:void(0)" id="zidong">
+						<i><em></em></i>
+						自动登录
+					</a>
+					<span class="s1">忘记密码？</span>
+					<b></b>
+					<span>用其他账户登陆</span>
+				</li>
+				<li class="l3">
+					<span>你还不是绿野FAMILY的一员?</span>
+					<a href="register.html">立即注册</a>           <!--跳转-->
+				</li>
+			</ul>
+		</div>
+		<ul class="footer">
+			<li class="l-1">
+				<a href="">绿野网</a>
+				<span>|</span>
+				<a href="">绿野活动</a>
+				<span>|</span>
+				<a href="">绿野自游通</a>
+				<span>|</span>
+				<a href="">六只脚</a>
+			</li>
+			<li class="l-2"><p>绿野自游通，作为绿野网的专用支付平台，全程护驾您在绿野网的资金流转。</p></li>
+			<li class="l-3"><p><em></em>常见问题</p></li>
+			<li class="l-4"><p>Copyright&nbsp;1999-2014&nbsp;www.lvye.cn,绿野网版权所有&nbsp;&nbsp;&nbsp;京ICP证12009911号-1</p></li>
+		</ul>
+		
+		<script type="text/javascript">
+			var engName= /^[\u4e00-\u9fa5]{2,7}$|^[a-zA-Z]{1,14}$/;       //验证汉字不超过7个，字母不超过14个,写上的这个范围是算完之后的
+			var pattern = /^(((13[0-9]{1})|(15[0-9]{1})|(18[0-9]{1}))+\d{8})$/;    //验证手机号
+			var pass=/^[a-zA-Z]\w{5,17}$/;		//以字母开头，长度在6~18之间，只能包含字母、数字和下划线
+			var email=/^\w+([-+.]\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$/;
+			
+			$("#denglu").click(function(){
+				var na=engName.test($("#yonghu").val());
+				var tel=pattern.test($("#yonghu").val());
+				var el=email.test($("#yonghu").val());
+				if($('#yonghu').val()==''){
+					$('.p1').css({display:'block'});
+					$('.p3').css({display:'none'});
+				}else if(na||tel||el){
+					$('.p1').css({display:'none'});
+					$('.p3').css({display:'none'});
+				}else{
+					$('.p3').css({display:'block'});
+					$('.p1').css({display:'none'});
+				}
+			})
+			$("#denglu").click(function(){
+				var code=pass.test($("#mima").val());
+				if($('#mima').val()==''){
+					$('.p2').css({display:'block'});
+					$('.p4').css({display:'none'});
+				}else if(code){
+					$('.p2').css({display:'none'});
+					$('.p4').css({display:'none'});
+				}else{
+					$('.p2').css({display:'none'});
+					$('.p4').css({display:'block'});
+				}
+			})
+			$("#yonghu").focus(function(){
+				$(this).css({border:"1px solid #F80"});
+			})
+			$("#yonghu").blur(function(){
+				$(this).css({border:"1px solid #ddd"});
+			})
+			$("#mima").focus(function(){
+				$(this).css({border:"1px solid #F80"});
+			})
+			$("#mima").blur(function(){
+				$(this).css({border:"1px solid #ddd"});
+			})
+			
+			$("#denglu").click(function(){
+				//发送数据
+				var datas={
+					user:$("#yonghu").val(),
+					pwd:$("#mima").val(),
+				};
+				var na=engName.test($("#yonghu").val());
+				var tel=pattern.test($("#yonghu").val());
+				var el=email.test($("#yonghu").val());
+				var code=pass.test($("#mima").val());
+				if($(".ipt").val()&&na||el||code&&code){
+					$.ajax({
+						type:"post",
+						url:"json.json",
+						data:datas,
+						success:function(data){
+							for(var i=0;i<data.length;i++){
+								$("li").append("<p>"+data[i].name+"</p>")
+							}
+						},
+						error:function(textThrown){
+							console.log(textThrown);
+						}
+					})
+				}
+			});
+			//点击对勾消失未实现
+			$("#zidong").click(function(){
+				$("#zidong").find("em").toggle(
+	  				function(){$("#zidong").children("em").css({backgroundPosition:"0 0"})}
+				);
+			})
+		</script>
+	</body>
+</html>

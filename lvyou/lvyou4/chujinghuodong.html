@@ -1,0 +1,737 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>出境活动</title>
+		<link rel="stylesheet" href="css/chujinghuodong.css" />
+		<link rel="stylesheet" href="css/swiper-3.4.2.min.css" />
+		<link rel="stylesheet" href="css/weibu.css" />
+		<link rel="stylesheet" href="css/toubu.css" />
+		<script src="js/jquery.qrcode.min.js"></script>
+		<style>
+			html,
+			body {
+				/* position: relative;*/
+				height: 100%;
+				width: 100%;
+			}
+			
+			body {
+				/*background: #eee;*/
+				font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+				font-size: 14px;
+				color: #000;
+				margin: 0;
+				padding: 0;
+			}
+			
+			.swiper-container {
+				width: 1190px;
+				height: 100%;
+			}
+			
+			.swiper-slide {
+				text-align: center;
+				font-size: 18px;
+				background: #fff;
+				/* Center slide text vertically */
+				display: -webkit-box;
+				display: -ms-flexbox;
+				display: -webkit-flex;
+				display: flex;
+				-webkit-box-pack: center;
+				-ms-flex-pack: center;
+				-webkit-justify-content: center;
+				justify-content: center;
+				-webkit-box-align: center;
+				-ms-flex-align: center;
+				-webkit-align-items: center;
+				align-items: center;
+			}
+			
+			.swiper-pagination {
+				width: 1190px;
+				height: 20px;
+			}
+			
+			.imgwrapper img {
+				cursor: pointer;
+				transition: all 0.6s;
+			}
+			
+			.imgwrapper img:hover {
+				transform: scale(1.4);
+			}
+		</style>
+	</head>
+
+	<body>
+
+		<!--页头-->
+		<div class="header">
+			<div class="ma-rg">
+				<a href="../lvyou2/register.html" class="">注册</a>
+				<span>|</span>
+				<a href="../lvyou2/land.html">登录</a>
+			</div>
+		</div>
+		<!--LOGO-->
+		<div class="logo">
+			<h1>
+					<img src="img/lvye_logo.png"/>
+				</h1>
+			<div class="logo-ctn">
+				<!--添加鼠标经过时添加样式-->
+				<div class="logo-box">活动
+					<ul>
+						<li>
+							<a href="" style="color: darkgrey">活动</a>
+						</li>
+						<li>
+							<a href="" style="color: darkgrey">文章</a>
+						</li>
+						<li>
+							<a href="" style="color: darkgrey">帖子</a>
+						</li>
+						<li>
+							<a href="" style="color: darkgrey">用户</a>
+						</li>
+						<li>
+							<a href="" style="color: darkgrey">更多</a>
+						</li>
+					</ul>
+				</div>
+				<input type="text" name="" id="" value="" placeholder="输入目的地、景点名等关键词" class="ipt1" style=“outline:none/>
+				<input type="button" id="" value="搜索" class="btn" />
+			</div>
+			<div class="app">
+				<a href="../lvyou2/App.html" target="_blank"><span>APP 下载</span></a>
+				<br />
+				<a href="" title="绿野活动" class="pa-a">绿野活动</a>
+				<a href="" title="六只脚">六只脚</a>
+			</div>
+		</div>
+		<!--导航-->
+		<div class="nav-box" id="top">
+			<ul class="nav">
+				<li class="nav-lis">
+					<a href="../lvyou1/index.html">首页</a>
+				</li>
+				<li>
+					<a href="../lvyou1/activity.html" target="_blank">活动</a>
+					<ol class="nav-olis">
+						<li>
+							<a href="">自由活动</a>
+						</li>
+						<li>
+							<a href="">AA活动</a>
+						</li>
+						<li>
+							<a href="">自游通</a>
+						</li>
+					</ol>
+				</li>
+				<li>
+					<a href="../lvyou2/beimei.html" target="_blank">专题</a>
+				</li>
+				<li>
+					<a href="../lvyou3/ly.html" target="_blank">咨询</a>
+					<ol class="nav-olis">
+						<li>
+							<a href="../xiangmu/ly.html" target="_blank">户外资讯</a>
+						</li>
+						<li>
+							<a href="">装备频道</a>
+						</li>
+						<li>
+							<a href="">游记攻略</a>
+						</li>
+						<li>
+							<a href="">户外知识</a>
+						</li>
+					</ol>
+				</li>
+				<li>
+					<a href="chujinghuodong.html" target="_blank">论坛</a>
+					<ol class="nav-olis">
+						<li>
+							<a href="">AA活动</a>
+						</li>
+						<li>
+							<a href="">绿野风版</a>
+						</li>
+						<li>
+							<a href="">绿野滑雪</a>
+						</li>
+						<li>
+							<a href="">自驾越野</a>
+						</li>
+						<li>
+							<a href="">自由结伴</a>
+						</li>
+					</ol>
+				</li>
+				<li>
+					<a href="../lvyou2/App.html" target="_blank">APP</a>
+				</li>
+				<li>
+					<a href="">六只脚</a>
+					<ol class="nav-olis">
+						<li>
+							<a href="">户外线路</a>
+						</li>
+						<li>
+							<a href="">线路大全</a>
+						</li>
+						<li>
+							<a href="">线路精选</a>
+						</li>
+						<li>
+							<a href="">线路地图</a>
+						</li>
+					</ol>
+				</li>
+				<li>
+					<a href="../lvyou2/xiuxian.html" target="_blank">休闲</a>
+				</li>
+				<li>
+					<a href="../lvyou3/ly1.html" target="_blank">度假</a>
+				</li>
+			</ul>
+		</div>
+
+		<div class="inn-banner">
+
+			<div class="swiper-container">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide" data-hash="slide1">
+						<a href="../xiangmu/ly.html" target="_blank"><img src="img/kezhangongyu/TB1MCHCNVXXXXX7aXXXXXXXXXXX-1440-350.jpg" /></a>
+					</div>
+					<div class="swiper-slide" data-hash="slide2">
+						<a href="../xiangmu/ly.html" target="_blank"><img src="img/kezhangongyu/TB1oWzDPXXXXXa.XVXXXXXXXXXX-1440-350.jpg" /></a>
+					</div>
+					<div class="swiper-slide" data-hash="slide3">
+						<a href="../xiangmu/ly.html" target="_blank"><img src="img/kezhangongyu/TB1tBkDQXXXXXb1XXXXXXXXXXXX-1440-350.jpg" /></a>
+					</div>
+					<div class="swiper-slide" data-hash="slide4">
+						<a href="../xiangmu/ly.html" target="_blank"><img src="img/kezhangongyu/TB1Xg_9PFXXXXcUaXXXXXXXXXXX-1436-350.jpg" /></a>
+					</div>
+
+				</div>
+				<!-- Add Pagination -->
+				<div class="swiper-pagination"></div>
+				<!-- Add Arrows -->
+				<div class="swiper-button-next"></div>
+				<div class="swiper-button-prev"></div>
+			</div>
+
+			<!-- Swiper JS -->
+
+			<script src="js/swiper-3.4.2.min.js"></script>
+			<!-- Initialize Swiper -->
+			<script>
+				var swiper = new Swiper('.swiper-container', {
+					pagination: '.swiper-pagination',
+					paginationClickable: true,
+					nextButton: '.swiper-button-next',
+					prevButton: '.swiper-button-prev',
+					spaceBetween: 30,
+					hashnav: true,
+					hashnavWatchState: true
+				});
+			</script>
+		</div>
+
+		<div class="col col-main">
+			<div class="main-wrap J_Region">
+				<!--module -->
+
+				<div class="place-channel-world J_Module">
+					<div class="module-wrap J_tb_lazyload tb-module pc-place-index-world tb-lazyload">
+						<h2 class="world-title">
+    </h2>
+						<div class="world-wrapper">
+
+							<div class="pic-item pic-item1">
+								<a href='../xiangmu/ly.html'>
+									<div class="imgwrapper">
+
+										<img src='img/kezhangongyu/b/TB19ZsFPFXXXXX3XFXXXXXXXXXX-400-400.jpg' class="huxiimg" />
+
+									</div>
+									<div class="msg-container">
+										<div class="main-title">迪拜</div>
+										<div class="sub-title">免费落地签带您探索世界之最！</div>
+
+									</div>
+								</a>
+							</div>
+
+							<div class="pic-item pic-item2">
+								<a href='../xiangmu/ly.html'>
+									<div class="imgwrapper">
+										<img src='img/kezhangongyu/b/TB1VYC9KpXXXXaCXXXXSutbFXXX.jpg' class="huxiimg" />
+
+										<div class="bg"></div>
+
+									</div>
+									<div class="msg-container">
+										<div class="main-title">美国</div>
+										<div class="sub-title">格调大片 玩美体验</div>
+
+									</div>
+								</a>
+							</div>
+
+							<div class="pic-item pic-item3">
+								<a href='../xiangmu/ly.html'>
+									<div class="imgwrapper">
+										<img src='img/kezhangongyu/b/TB1BLO6JpXXXXbjXVXXwu0bFXXX.png' class="huxiimg" />
+
+										<div class="bg"></div>
+
+									</div>
+									<div class="msg-container">
+										<div class="main-title">日本</div>
+										<div class="sub-title">唯美和风 浪漫物语</div>
+
+									</div>
+								</a>
+							</div>
+
+							<div class="pic-item pic-item4">
+								<a href='../xiangmu/ly.html'>
+									<div class="imgwrapper">
+										<img src='img/kezhangongyu/b/TB15MyZKFXXXXcDXFXXwu0bFXXX.png' class="huxiimg" />
+
+										<div class="bg"></div>
+
+									</div>
+									<div class="msg-container">
+										<div class="main-title">新西兰</div>
+										<div class="sub-title">纯美魔境 中土世界</div>
+
+									</div>
+								</a>
+							</div>
+
+							<div class="pic-item pic-item5">
+								<a href='../xiangmu/ly.html'>
+									<div class="imgwrapper">
+										<img src='img/kezhangongyu/b/TB1c9QxNVXXXXbHapXXXXXXXXXX-300-300.jpg' class="huxiimg" />
+
+										<div class="bg"></div>
+
+									</div>
+									<div class="msg-container">
+										<div class="main-title">英国</div>
+										<div class="sub-title">邂逅英伦 发现惊喜</div>
+
+									</div>
+								</a>
+							</div>
+
+							<div class="pic-item pic-item6">
+								<a href='../xiangmu/ly.html'>
+									<div class="imgwrapper">
+										<img src='img/kezhangongyu/b/TB1w4f1PXXXXXb1XXXXXXXXXXXX-300-300.jpg' class="huxiimg" />
+
+										<div class="bg"></div>
+
+									</div>
+									<div class="msg-container">
+										<div class="main-title">加拿大</div>
+										<div class="sub-title">枫叶之国 壮美辽阔</div>
+
+									</div>
+								</a>
+							</div>
+
+							<div class="pic-item pic-item7">
+								<a href='../xiangmu/ly.html'>
+									<div class="imgwrapper">
+										<img src='img/kezhangongyu/b/TB1rB.6NVXXXXXoXpXXXXXXXXXX-190-390.jpg' class="huxiimg" />
+
+										<div class="bg"></div>
+
+									</div>
+									<div class="msg-container">
+										<div class="main-title">法国</div>
+										<div class="sub-title">时尚之都 浪漫满城</div>
+
+									</div>
+								</a>
+							</div>
+
+							<div class="pic-item pic-item8">
+								<a href='../xiangmu/ly.html'>
+									<div class="imgwrapper">
+										<img src='img/kezhangongyu/b/TB1VUs4NVXXXXa7XpXXXXXXXXXX-300-300.jpg' class="huxiimg" />
+
+										<div class="bg"></div>
+
+									</div>
+									<div class="msg-container">
+										<div class="main-title">芬兰</div>
+										<div class="sub-title">千湖之国 绚丽极光</div>
+
+									</div>
+								</a>
+							</div>
+
+							<div class="pic-item pic-item9">
+								<a href='../xiangmu/ly.html'>
+									<div class="imgwrapper">
+										<img src='img/kezhangongyu/b/TB14au7KpXXXXa2XXXXwu0bFXXX.png' class="huxiimg" />
+
+										<div class="bg"></div>
+
+									</div>
+									<div class="msg-container">
+										<div class="main-title">泰国</div>
+										<div class="sub-title">千佛之国 暹罗之恋</div>
+
+									</div>
+								</a>
+							</div>
+
+							<div class="pic-item pic-item10">
+								<a href='../xiangmu/ly.html'>
+									<div class="imgwrapper">
+										<img src='img/kezhangongyu/b/TB1VCcxNVXXXXXZapXXXXXXXXXX-300-300.jpg' class="huxiimg" />
+
+										<div class="bg"></div>
+
+									</div>
+									<div class="msg-container">
+										<div class="main-title">新加坡</div>
+										<div class="sub-title">畅游新加坡</div>
+
+									</div>
+								</a>
+							</div>
+
+							<div class="pic-item pic-item11">
+								<a href='../xiangmu/ly.html'>
+									<div class="imgwrapper">
+										<img src='img/kezhangongyu/b/TB10t3jNVXXXXa4XpXXXXXXXXXX-300-300.jpg' class="huxiimg" />
+
+										<div class="bg"></div>
+
+									</div>
+									<div class="msg-container">
+										<div class="main-title">马来西亚</div>
+										<div class="sub-title">亚洲魅力所在</div>
+
+									</div>
+								</a>
+							</div>
+
+							<div class="pic-item pic-item12">
+								<a href='../xiangmu/ly.html'>
+									<div class="imgwrapper">
+										<img src='img/kezhangongyu/b/TB1PCG.KpXXXXXsXXXXSutbFXXX.jpg' class="huxiimg" />
+
+										<div class="bg"></div>
+
+									</div>
+									<div class="msg-container">
+										<div class="main-title">澳大利亚</div>
+										<div class="sub-title">乐水“澳”游 全景之旅</div>
+
+									</div>
+								</a>
+							</div>
+
+						</div>
+
+					</div>
+
+				</div>
+
+			</div>
+
+		</div>
+
+		<!--尾部-->
+		<div class="tail">
+			<div class="tail1">
+				<div class="tail-1">
+					<div class="a1">
+						<em></em>
+						<h5>
+								关于我们
+							</h5>
+						<ul>
+							<li>
+								<a href="">绿野简介</a>
+							</li>
+							<li>
+								<a href="">企业文化</a>
+							</li>
+							<li>
+								<a href="">联系我们</a>
+							</li>
+							<li>
+								<a href="">加入我们</a>
+							</li>
+							<li>
+								<a href="">广告与合作</a>
+							</li>
+							<li>
+								<a href="">网站声明</a>
+							</li>
+						</ul>
+					</div>
+					<div class="a2">
+						<em></em>
+						<h5>
+								帮助中心
+							</h5>
+						<ul>
+							<li>
+								<a href="">新手入门</a>
+							</li>
+							<li>
+								<a href="">账号问题</a>
+							</li>
+							<li>
+								<a href="">问题投诉</a>
+							</li>
+							<li>
+								<a href="">为什么参加绿野活动</a>
+							</li>
+						</ul>
+					</div>
+					<div class="a3">
+						<em></em>
+						<h5>
+								实用工具
+							</h5>
+						<ul>
+							<li>
+								<a href="">网址导航</a>
+							</li>
+							<li>
+								<a href="">网站地图</a>
+							</li>
+							<li>
+								<a href="">领队申请</a>
+							</li>
+							<li>
+								<a href="">绿野供应商</a>
+							</li>
+							<li>
+								<a href="">绿野营销商</a>
+							</li>
+						</ul>
+					</div>
+					<div class="a4">
+						<em></em>
+						<div id="qrcode"></div>
+					</div>
+				</div>
+			</div>
+			<div class="tail2">
+				<div class="tail-2">
+					<p>北京绿野视界信息技术有限公司 Copyright 1999-2014 www.lvye.cn,绿野户外网版权所有 京ICP证12009911号-1 电信业务审批[2003]字第361号</p>
+					<ul class="links">
+						<li>
+							<a href="">户外旅游</a>
+						</li>
+						<li>
+							<a href="">户外线路</a>
+						</li>
+						<li>
+							<a href="">户外帮</a>
+						</li>
+						<li>
+							<a href="">艺龙旅游指南</a>
+						</li>
+						<li>
+							<a href="">汽车问答</a>
+						</li>
+						<li>
+							<a href="">汽车品牌</a>
+						</li>
+						<li>
+							<a href="">爱卡汽车评测</a>
+						</li>
+						<li>
+							<a href="">蚂蜂窝旅游攻略</a>
+						</li>
+						<li>
+							<a href="">穷游网</a>
+						</li>
+						<li>
+							<a href="">网易旅游</a>
+						</li>
+						<li>
+							<a href="">出境自助游</a>
+						</li>
+						<li>
+							<a href="">21世纪房车网</a>
+						</li>
+						<li>
+							<a href="">旅行社</a>
+						</li>
+						<li>
+							<a href="">中国旅游信息网</a>
+						</li>
+						<li>
+							<a href="">一日游</a>
+						</li>
+						<li>
+							<a href="">环球滑雪</a>
+						</li>
+						<li>
+							<a href="">合肥论坛</a>
+						</li>
+						<li>
+							<a href="">特价酒店</a>
+						</li>
+						<li>
+							<a href="">中华网旅游</a>
+						</li>
+						<li>
+							<a href="">百酷特色住宿</a>
+						</li>
+						<li>
+							<a href="">央视网旅游</a>
+						</li>
+						<li>
+							<a href="">同程网</a>
+						</li>
+						<li>
+							<a href="">编织人生</a>
+						</li>
+						<li>
+							<a href="">迈点网</a>
+						</li>
+						<li>
+							<a href="">凤凰古城</a>
+						</li>
+						<li>
+							<a href="">POCO旅游</a>
+						</li>
+						<li>
+							<a href="">住哪网</a>
+						</li>
+						<li>
+							<a href="">今题网</a>
+						</li>
+						<li>
+							<a href="">沈阳旅行社</a>
+						</li>
+						<li>
+							<a href="">旅游</a>
+						</li>
+						<li>
+							<a href="">理想股票论坛</a>
+						</li>
+						<li>
+							<a href="">中国航空旅游网</a>
+						</li>
+						<li>
+							<a href="">中国国际旅行社</a>
+						</li>
+						<li>
+							<a href="">孔夫子旧书网</a>
+						</li>
+						<li>
+							<a href="">锦江旅游</a>
+						</li>
+						<li>
+							<a href="">旅游网</a>
+						</li>
+						<li>
+							<a href="">慧择网</a>
+						</li>
+						<li>
+							<a href="">宜春新闻网</a>
+						</li>
+						<li>
+							<a href="">五分旅游网</a>
+						</li>
+						<li>
+							<a href="">火车票网上订票</a>
+						</li>
+						<li>
+							<a href="">旅游百事通</a>
+						</li>
+						<li>
+							<a href="">蚂蚁短租</a>
+						</li>
+						<li>
+							<a href="">九游网</a>
+						</li>
+						<li>
+							<a href="">火车票预订</a>
+						</li>
+						<li>
+							<a href="">火车票网上查询</a>
+						</li>
+						<li>
+							<a href="">梦之旅</a>
+						</li>
+						<li>
+							<a href="">长岛旅游</a>
+						</li>
+						<li>
+							<a href="">机票</a>
+						</li>
+						<li>
+							<a href="">户外装备</a>
+						</li>
+						<li>
+							<a href="">更多友情链接</a>
+						</li>
+						<li>
+							<a href="">申请友情链接</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		</div>
+
+		<script src="js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/jquery.qrcode.min.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			//			for(var i=0;i<$('.i-nav-1 img').length;i++){
+			//				$('.i-nav-1 img').siblings(i).mouseenter(function(){
+			//				    $('.wenzi').eq(i).css({display:'block'})
+			//			});
+			//			    $('.i-nav-1 img').siblings(i).mouseleave(function(){
+			//				    $('.wenzi').eq(i).css({display:'none'});
+			//			}); 
+			//			}
+			//			function over(){
+			//				if($('.wenzi').is(':visible')){
+			//					$('.wenzi').show();
+			//				}else{
+			//					$('.wenzi').hide();
+			//				}
+			//			};
+			//			$('.i-nav-1 img').hover(over,over);
+			$('.i-nav-1').mouseover(function() {
+				//          	$(this).siblings('.wenzi').css({display:'block'})
+				$(this).children('.wenzi').slideDown({ marginTop: '-200px' }, 1200).css({ display: 'block' });
+			})
+			$('.i-nav-1').mouseleave(function() {
+				//          	$(this).siblings('.wenzi').css({display:'none'})
+				$(this).children('.wenzi').slideUp({ marginTop: '-200px' }, 1200).css({ display: 'none' });
+			});
+
+			//二维码
+			jQuery('#qrcode').qrcode({
+				render: "canvas", //也可以替换为table
+				width: 100,
+				height: 100,
+				text: "http://www.baidu.com"
+			});
+		</script>
+	</body>
+
+</html>
