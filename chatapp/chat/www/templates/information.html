@@ -1,0 +1,46 @@
+<ion-view view-title="">
+	<ion-header-bar align-title="left" class="bar-dark">
+		<div class="h1 title ziliao">
+			<a class="icon ion-arrow-left-c" href="#/tab/dash/information"></a>
+			<span>个人信息</span>
+		</div>
+		<div class="buttons">
+			<button class="button button-balanced baocun" ng-click="rese()">保存</button>
+		</div>
+	</ion-header-bar>
+	<ion-content class="hui">
+		<div class="list">
+			<div class="rj-contacts-index-bar"></div>
+			<a class="item" href="#/head">
+				<span>头像</span>
+				<span class="badge">
+					<img ng-src="{{imgs}}" width="40" height="40"/>
+					<!--<input type="file" multiple="multiple" class="change-img" name="" id="change-img" value="">-->
+				</span>
+				<!--<i class="icon ion-chevron-right icon-accessory"></i>-->
+			</a>
+			<div class="item" ng-click="showPopup()">
+				<span>昵称</span>
+				<span class="item-note">
+            		{{nickname}}
+          		</span>
+				<!--<i class="icon ion-chevron-right icon-accessory"></i>-->
+			</div>
+			<div class="item" ng-click="showSex()">
+				<span>性别</span>
+				<span class="item-note">
+            		{{sex}}
+          		</span>
+				<!--<i class="icon ion-chevron-right icon-accessory"></i>-->
+			</div>
+			<div class="item autograph" ng-click="showAutograph()">
+				<span>个性签名</span>
+				<span class="autograph-text">
+            		{{autograph}}
+          		</span>
+				<!--<i class="icon ion-chevron-right icon-accessory"></i>-->
+			</div>
+		</div>
+	</ion-content>
+
+</ion-view>

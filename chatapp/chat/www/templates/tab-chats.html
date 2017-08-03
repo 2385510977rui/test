@@ -1,0 +1,38 @@
+<ion-header-bar align-title="left" class="bar-dark">
+	<div class="head">
+	<!--	<img ng-src="{{imgs}}" />-->
+	</div>
+	<div class="h1 title">聊天</div>
+	<!--<a  href="#/add-friends">
+		<button class="button no-animation button-icon icon ion-android-add">
+        </button>
+	</a>-->
+	<a class="button" href="#/add-friends">
+	    <i  class="icon ion-android-add"></i>
+		<!-- <button class="button no-animation button-icon icon ion-android-add">
+        </button> -->
+	</a>
+</ion-header-bar>
+
+<ion-view>
+	<ion-content>
+		<ion-list>
+			<ion-item class="item-remove-animate item-avatar item-icon-right" ng-repeat="chat in chats" type="item-text-wrap" ui-sref="tab-chat-detail">
+				<img ng-src="{{chat.face}}">
+				<!--<span class="rj-sm-red-icon">
+					<p>5</p>
+				</span>-->
+				<h2>{{chat.name}}</h2>
+				<p class="rj-list-p">{{chat.lastText}}</p>
+				<span class="rj-push-right">2017.3.21</span>
+				<ion-option-button class="button-assertive" ng-click="remove(chat)">
+					Delete
+				</ion-option-button>
+			</ion-item>
+		</ion-list>
+
+		
+	</ion-content>
+</ion-view>
+
+

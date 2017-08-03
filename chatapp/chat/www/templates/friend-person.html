@@ -1,0 +1,79 @@
+<!--
+  This template loads for the 'tab.friend-detail' state (app.js)
+  'friend' is a $scope variable created in the FriendsCtrl controller (controllers.js)
+  The FriendsCtrl pulls data from the Friends service (service.js)
+  The Friends service returns an array of friend data
+-->
+
+<ion-header-bar align-title="left" class="bar-dark">
+	<div class="h1 title ziliao">
+		<a class="icon ion-arrow-left-c" href="#/tab/friends"></a><span>详细资料</span></div>
+	<div class="buttons">
+
+	</div>
+</ion-header-bar>
+<ion-view view-title="" class="hui">
+	<ion-content>
+		<div class="rj-contacts-index-bar"></div>
+		<ion-list>
+			<a class="item item-avatar" href="#">
+				<img src="img/ben.png">
+				<!--<img ng-src="{{friend.face}}">-->
+				<!--<h2>{{friend.name}}</h2>-->
+				<h2>张三</h2>
+				<p>微信号：</p>
+				<p>昵称：</p>
+			</a>
+		</ion-list>
+		<div class="rj-contacts-index-bar"></div>
+		<ion-list>
+			<a class="item" href="#">
+				设置备注和标签
+			</a>
+		</ion-list>
+		<div class="rj-contacts-index-bar"></div>
+		<ion-list>
+			<div class="item diqu" href="#">
+				地区<span>中国</span>
+			</div>
+		</ion-list>
+		<ion-list>
+			<div class="item xiangce" href="#">
+				<p>个人相册</p>
+				<span>
+					<img src="img/max.png"/>
+				</span>
+				<span>
+					<img src="img/max.png"/>
+				</span>
+				<span>
+					<img src="img/max.png"/>
+				</span>
+			</div>
+		</ion-list>
+		<ion-list>
+			<div class="item">
+				<h2>更多</h2>
+			</div>
+
+		</ion-list>
+		<ion-list>
+			<div class="friend-btn">
+				<button class="button button-block button-balanced">发消息</button>
+			</div>
+			<div class="friend-btn">
+				<button class="button button-block button-light">视频聊天</button>
+			</div>
+		</ion-list>
+
+	</ion-content>
+</ion-view>
+
+<!--<ion-view view-title="{{friend.name}}">
+	<ion-content class="padding">
+		<img ng-src="{{friend.face}}" style="width: 64px; height: 64px">
+		<p>
+			{{friend.lastText}}
+		</p>
+	</ion-content>
+</ion-view>-->

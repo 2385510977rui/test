@@ -1,0 +1,34 @@
+<ion-view view-title="" class="hui">
+	<ion-header-bar align-title="left" class="bar-dark">
+		<div class="h1 title ziliao">
+			<a class="icon ion-arrow-left-c" href="#/tab/friends"></a>
+			<span>添加好友</span>
+		</div>
+		<div class="buttons">
+
+		</div>
+	</ion-header-bar>
+	<ion-content>
+		<ion-list>
+			<div class="rj-contacts-index-bar"></div>
+			<div class="item item-input-inset">
+				<label class="item-input-wrapper">
+      				<input type="text" placeholder="微信号" ng-model="friend.tel">
+    			</label>
+				<button class="button button-small white" ng-click="sou()">
+      				搜索
+    			</button>
+			</div>
+
+		</ion-list>
+		<ion-list ng-if='fu'>
+			<ion-item class="item-remove-animate item-avatar add-friend" type="item-text-wrap">
+				<img ng-src="{{friendimg}}">
+				<h2>{{friendname}}</h2>
+				<button class="button button-small white" ng-click="jia()">
+      				添加
+    			</button>
+			</ion-item>
+		</ion-list>
+	</ion-content>
+</ion-view>

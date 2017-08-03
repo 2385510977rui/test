@@ -1,0 +1,50 @@
+<ion-header-bar align-title="left" class="bar-dark">
+	<div class="head">
+		<!--<img ng-src="{{imgs}}"/>-->
+	</div>
+	<div class="h1 title">通讯录</div>
+	<!--<a class="button" href="#/add-friends">
+		<button class="button no-animation button-icon icon ion-android-add">
+        </button>
+	</a>-->
+	
+	<a class="button" href="#/add-friends">
+	    <i  class="icon ion-android-add"></i>
+		<!-- <button class="button no-animation button-icon icon ion-android-add">
+        </button> -->
+	</a>
+	
+</ion-header-bar>
+<ion-view view-title="Friends">
+	<ion-content>
+		<ion-list>
+			<div class="row friend-col">
+				<a class="col" href="#/xin-friends">
+					<i class="icon ion-android-person-add blue" ></i>
+					<span class="tab-title ng-binding blue">新的朋友</span>
+				</a>
+				<div class="col">
+					<i class="icon ion-android-contacts blue"></i>
+					<span class="tab-title ng-binding blue">群组</span>
+				</div>
+				<div class="col">
+					<i class="icon ion-android-favorite blue"></i>
+					<span class="tab-title ng-binding blue">特别关心</span>
+				</div>
+			</div>
+		</ion-list>
+		<div class="rj-contacts-index-bar"></div>
+		<ion-list ng-repeat="ie in aer">
+			<ion-item class="item-remove-animate item-avatar item-icon-right friends-item"  type="item-text-wrap" ui-sref="tab-chat-detail">
+				<img ng-src="{{ie.imgs.sm_img}}">
+				<h2>{{ie.nickname}}</h2>
+				<!--<i class="icon ion-chevron-right icon-accessory"></i>-->
+
+				<ion-option-button class="button-assertive" ng-click="remove(friend)">
+					Delete
+				</ion-option-button>
+			</ion-item>
+		</ion-list>
+	</ion-content>
+
+</ion-view>

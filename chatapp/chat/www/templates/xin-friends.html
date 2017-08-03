@@ -1,0 +1,25 @@
+<ion-view view-title="" class="hui">
+	<ion-header-bar align-title="left" class="bar-dark">
+		<div class="h1 title ziliao">
+			<a class="icon ion-arrow-left-c" href="#/tab/friends"></a>
+			<span>新的好友</span>
+		</div>
+		<div class="buttons">
+
+		</div>
+	</ion-header-bar>
+	<ion-content>
+		<ion-list ng-repeat="item in art">
+			<ion-item class="item-remove-animate item-avatar add-friend" type="item-text-wrap">
+				<img ng-src="{{item.imgs.sm_img}}" />
+				<h2>{{item.nickname}}</h2>
+				<a href="#/tab/friends">
+					<button class="button button-small white" ng-click='agerr(item.tel)'>
+      				同意
+    			</button>
+				</a>
+
+			</ion-item>
+		</ion-list>
+	</ion-content>
+</ion-view>

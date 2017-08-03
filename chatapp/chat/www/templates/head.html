@@ -1,0 +1,36 @@
+<ion-view view-title="">
+	<ion-header-bar align-title="left" class="bar-dark">
+		<div class="h1 title ziliao">
+			<a class="icon ion-arrow-left-c" href="#/dash/information"></a>
+			<span>修改头像</span>
+		</div>
+		<a class="buttons" href="#/dash/information">
+			<button class="button button-balanced baocun" ng-click="submit_form()">保存</button>
+		</a>
+	</ion-header-bar>
+	<ion-content>
+		<div class="list">
+			<!---->
+			<form>
+				<div>
+					<!-- 采用angular循环的方式，对存入thumb的图片进行展示 -->
+					<label>
+                        <img ng-src="{{thumb.imgSrc}}" width="100%"/>
+                    </label>
+					<span ng-if="item.imgSrc" ng-click="img_del($index)"></span>
+					<div ng-repeat="item in thumb_default">
+						<!-- 这里之所以写个循环，是为了后期万一需要多个‘加号’框 -->
+						<label>
+							<div class="relative headd">
+								<button class="button button-block button-balanced">上传图片</button>
+                        		<input type="file" id="one-input" accept="image/*" file-model="images" onchange="angular.element(this).scope().img_upload(this.files)"/>
+							</div>
+							
+                    	</label>
+					</div>
+				</div>
+			</form>
+		</div>
+	</ion-content>
+
+</ion-view>
